@@ -1,0 +1,40 @@
+{
+  "files": [
+    {
+      "name": "news_narration_demo_ems.wav",
+      "label": "📰 News Narration (Demo)",
+      "size_mb": 1.7,
+      "duration_s": 18.3
+    },
+    {
+      "name": "stress_pattern_demo_ems.wav",
+      "label": "🔤 Stress Pattern (Demo)",
+      "size_mb": 0.7,
+      "duration_s": 7.2
+    },
+    {
+      "name": "rap_rhythm_demo_ems.wav",
+      "label": "🎤 Rap Rhythm (Demo)",
+      "size_mb": 1.4,
+      "duration_s": 15.2
+    },
+    {
+      "name": "rap_ems.wav",
+      "label": "🎤 Rap — Full Track",
+      "size_mb": 29.2,
+      "duration_s": 319.0
+    },
+    {
+      "name": "rap_vocal_ems.wav",
+      "label": "🎤 Rap Vocal — Full Track",
+      "size_mb": 29.2,
+      "duration_s": 319.0
+    },
+    {
+      "name": "test_tone_ems.wav",
+      "label": "🔊 Test Tone",
+      "size_mb": 0.5,
+      "duration_s": 6.0
+    }
+  ]
+}

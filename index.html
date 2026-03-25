@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visceral Resonance — Prominence-Driven EMS</title>
+  <meta name="description" content="Real-time speech prominence detection driving abdominal EMS for embodied listening. Exhibition demo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- ═══ Hero ═══ -->
+    <header class="hero">
+      <div class="hero__icon-wrap">
+        <span class="hero__icon">⚡</span>
+        <div class="hero__glow"></div>
+      </div>
+      <h1 class="hero__title">Visceral Resonance</h1>
+      <p class="hero__subtitle">Prominence-Driven Abdominal EMS for Embodied Listening</p>
+      <p class="hero__desc">
+        音声中のプロミネンス（強調）をリアルタイムで検出し、腹部EMSとして身体にフィードバックします。
+      </p>
+    </header>
+
+    <!-- ═══ Safety Warning ═══ -->
+    <div class="warning-banner" id="warningBanner">
+      <span class="warning-banner__icon">⚠️</span>
+      <div class="warning-banner__text">
+        <strong>安全警告 / Safety Warning</strong>
+        本ツールは電気筋肉刺激(EMS)用の音声信号を生成します。心臓ペースメーカー使用者は絶対に使用しないでください。
+        使用前に必ず音量を最小にし、徐々に上げてください。胸部への使用は禁止です。自己責任でご使用ください。
+      </div>
+      <button class="warning-banner__dismiss" id="dismissWarning" aria-label="Dismiss">✕</button>
+    </div>
+
+    <!-- ═══ Mode Tabs ═══ -->
+    <div class="mode-tabs">
+      <button class="mode-tab mode-tab--active" id="modeRealtimeBtn" data-mode="realtime">
+        <span>🎙️</span> リアルタイム
+      </button>
+      <button class="mode-tab" id="modePlaybackBtn" data-mode="playback">
+        <span>🎬</span> 視聴モード
+      </button>
+    </div>
+
+    <!-- ═══ Status Chip ═══ -->
+    <div class="system-status">
+      <div class="status-chip" id="statusChip">
+        <span class="status-chip__dot"></span>
+        <span class="status-chip__text">Initializing…</span>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════
+         Realtime Mode
+         ═══════════════════════════════════════════════ -->
+    <div class="mode-section" id="modeRealtimeSection">
+
+      <!-- Main Panel: Power + Meters -->
+      <div class="main-panel">
+        <div class="main-panel__left">
+          <button class="power-btn" id="powerBtn" aria-label="Start/Stop">⏻</button>
+          <p class="power-label" id="powerLabel">OFF</p>
+        </div>
+        <div class="main-panel__center">
+          <!-- Prominence Meter -->
+          <div class="prominence-meter">
+            <div class="prominence-meter__label">Prominence Score</div>
+            <div class="prominence-meter__bar-wrapper">
+              <div class="prominence-meter__bar" id="prominenceBar"></div>
+              <div class="prominence-meter__threshold" id="prominenceThresholdLine"></div>
+            </div>
+            <div class="prominence-meter__value">
+              <span id="prominenceScoreText">0.00</span>
+              <span class="prominence-meter__unit">/ 1.0</span>
+            </div>
+          </div>
+          <!-- Pulse Indicator -->
+          <div class="pulse-indicator" id="pulseIndicator">
+            <span class="pulse-indicator__dot" id="pulseDot"></span>
+            <span class="pulse-indicator__text" id="pulseText">No pulse</span>
+            <span class="pulse-indicator__count" id="pulseCount">0 pulses</span>
+          </div>
+          <!-- VAD Indicator -->
+          <div class="vad-indicator" id="vadIndicator">
+            <span class="vad-indicator__dot" id="vadDot"></span>
+            <span class="vad-indicator__label">VAD</span>
+            <span class="vad-indicator__text" id="vadText">Silence</span>
+          </div>
+        </div>
+        <div class="main-panel__right">
+          <div class="acn-info">
+            <div class="acn-info__item"><span class="acn-info__label">Backend</span><span class="acn-info__value" id="acnBackend">--</span></div>
+            <div class="acn-info__item"><span class="acn-info__label">Events</span><span class="acn-info__value" id="eventCount">0</span></div>
+            <div class="acn-info__item"><span class="acn-info__label">Pulses</span><span class="acn-info__value" id="totalPulses">0</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Waveform Visualizer -->
+      <div class="visualizer-section">
+        <div class="visualizer-card">
+          <div class="visualizer-header">
+            <span class="visualizer-title">EMS Output Waveform</span>
+            <span class="visualizer-info" id="sampleRateInfo">48 kHz</span>
+          </div>
+          <canvas id="waveformCanvas"></canvas>
+        </div>
+      </div>
+
+      <!-- Realtime Controls -->
+      <div class="controls-grid">
+        <div class="control-card control-card--full">
+          <div class="control-card__header">
+            <span class="control-card__title"><span>🎯</span> Prominence Threshold / 検出閾値</span>
+            <span class="control-card__value" id="thresholdValue">0.60</span>
+          </div>
+          <input type="range" id="thresholdSlider" min="10" max="95" value="60" step="1">
+          <div class="slider-labels"><span>0.10 (Sensitive)</span><span>0.95 (Strict)</span></div>
+        </div>
+        <div class="control-card">
+          <div class="control-card__header">
+            <span class="control-card__title"><span>🎙️</span> VAD Sensitivity</span>
+            <span class="control-card__value" id="vadSensitivityValue">3.0</span>
+          </div>
+          <input type="range" id="vadSensitivitySlider" min="1.5" max="8.0" value="3.0" step="0.1">
+          <div class="slider-labels"><span>1.5 (Sensitive)</span><span>8.0 (Strict)</span></div>
+        </div>
+        <div class="control-card">
+          <div class="control-card__header">
+            <span class="control-card__title"><span>⏱️</span> Latency Mode</span>
+            <span class="control-card__value latency-info" id="latencyModeInfo">~21ms (Causal)</span>
+          </div>
+          <div class="select-group">
+            <select id="latencyModeSelect">
+              <option value="low" selected>Low Latency (低レイテンシ)</option>
+              <option value="normal">Normal (ACN Triplet)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end realtime -->
+
+    <!-- ═══════════════════════════════════════════════
+         Playback Mode
+         ═══════════════════════════════════════════════ -->
+    <div class="mode-section mode-section--hidden" id="modePlaybackSection">
+
+      <!-- Port Selection -->
+      <div class="section-header">
+        <h2 class="section-title">Output Port / 出力ポート</h2>
+        <button class="btn-small" id="refreshDevicesBtn">🔄 Refresh Devices</button>
+      </div>
+      <div class="port-grid">
+        <div class="port-card">
+          <div class="port-card__header">
+            <span class="port-card__icon">🔊</span>
+            <span class="port-card__title">Audio Port (音声出力)</span>
+          </div>
+          <div class="select-group"><select id="audioPortSelect"><option value="default">Default</option></select></div>
+          <div class="port-card__hint">ヘッドホン / スピーカー</div>
+        </div>
+        <div class="port-card">
+          <div class="port-card__header">
+            <span class="port-card__icon">⚡</span>
+            <span class="port-card__title">EMS Port (刺激出力)</span>
+          </div>
+          <div class="select-group"><select id="emsPortSelect"><option value="default">Default</option></select></div>
+          <div class="port-card__hint">USB-C オーディオアダプタ → 電極パッド</div>
+        </div>
+      </div>
+
+      <!-- Media Library -->
+      <div class="section-header" style="margin-top:12px">
+        <h2 class="section-title">📁 Media Library</h2>
+      </div>
+      <div class="media-library" id="mediaLibrary">
+        <div class="media-library__loading">読み込み中…</div>
+      </div>
+
+      <!-- File Drop + Player -->
+      <div class="playback-card">
+        <div class="playback-drop-zone playback-drop-zone--small" id="dropZone">
+          <div class="playback-drop-zone__text">📂 その他のWAVファイルをドロップ / クリック</div>
+          <input type="file" id="playbackFileInput" accept=".wav" style="display:none">
+        </div>
+        <div class="playback-player" id="playbackPlayer" style="display:none">
+          <div class="playback-player__name" id="playbackFileName">--</div>
+          <div class="playback-transport">
+            <button class="transport-btn" id="playBtn">▶</button>
+            <button class="transport-btn" id="pauseBtn">⏸</button>
+            <button class="transport-btn" id="stopBtn">⏹</button>
+            <input type="range" class="seek-slider" id="seekSlider" min="0" max="100" value="0" step="0.1">
+            <span class="transport-time" id="transportTime">0:00 / 0:00</span>
+          </div>
+          <div class="playback-player__controls">
+            <button class="btn-small" id="playbackClearBtn">別のファイルを選択</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- end playback -->
+
+    <!-- ═══ Shared EMS Controls ═══ -->
+    <div class="controls-grid">
+      <div class="control-card control-card--full">
+        <div class="control-card__header">
+          <span class="control-card__title"><span>🔊</span> EMS Amplitude / 出力強度</span>
+          <span class="control-card__value amplitude-value" id="amplitudeValue">0%</span>
+        </div>
+        <input type="range" class="amplitude-slider" id="amplitudeSlider" min="0" max="100" value="0" step="1">
+        <div class="slider-labels"><span>0% (Safe)</span><span>50%</span><span>100% (Max)</span></div>
+      </div>
+      <div class="control-card">
+        <div class="control-card__header">
+          <span class="control-card__title"><span>〰️</span> Carrier Freq</span>
+          <span class="control-card__value" id="carrierFreqValue">4000 Hz</span>
+        </div>
+        <input type="range" id="carrierFreqSlider" min="1000" max="10000" value="4000" step="100">
+        <div class="slider-labels"><span>1 kHz</span><span>10 kHz</span></div>
+      </div>
+      <div class="control-card">
+        <div class="control-card__header">
+          <span class="control-card__title"><span>⏱️</span> Pulse Duration</span>
+          <span class="control-card__value" id="pulseDurationValue">100 ms</span>
+        </div>
+        <input type="range" id="pulseDurationSlider" min="20" max="500" value="100" step="10">
+        <div class="slider-labels"><span>20 ms</span><span>500 ms</span></div>
+      </div>
+      <div class="control-card">
+        <div class="control-card__header">
+          <span class="control-card__title"><span>📊</span> Waveform</span>
+        </div>
+        <div class="select-group">
+          <select id="waveformSelect">
+            <option value="0">Sine (正弦波)</option>
+            <option value="1">Square (矩形波)</option>
+            <option value="2">Biphasic (二相性)</option>
+          </select>
+        </div>
+      </div>
+      <div class="control-card">
+        <div class="control-card__header">
+          <span class="control-card__title"><span>⏳</span> Cooldown</span>
+          <span class="control-card__value" id="cooldownValue">200 ms</span>
+        </div>
+        <input type="range" id="cooldownSlider" min="50" max="1000" value="200" step="10">
+        <div class="slider-labels"><span>50 ms</span><span>1000 ms</span></div>
+      </div>
+    </div>
+
+    <!-- ═══ Event Log ═══ -->
+    <div class="event-log-section">
+      <div class="section-header">
+        <h2 class="section-title">Event Log</h2>
+        <button class="btn-small" id="clearLogBtn">Clear</button>
+      </div>
+      <div class="event-log" id="eventLog">
+        <div class="event-log__placeholder">Waiting for prominence events…</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ Bottom Status Bar ═══ -->
+  <div class="status-bar">
+    <div class="status-item"><div class="status-dot" id="statusDot"></div><span id="statusText">Idle</span></div>
+    <div class="status-item"><span>🎙️</span><span id="statusMic">--</span></div>
+    <div class="status-item"><span>🎬</span><span id="statusPlayback">--</span></div>
+    <div class="status-item"><span>⚡</span><span id="statusCarrier">4000 Hz</span></div>
+    <div class="status-item"><span>🔊</span><span id="statusAmplitude">0%</span></div>
+    <div class="status-item"><span>VAD</span><span id="statusVad">🔴</span></div>
+  </div>
+
+  <!-- ═══ Scripts ═══ -->
+  <script src="./lib/syllable.js"></script>
+  <script src="./lib/acn-model-acoustic-v1.js"></script>
+  <script src="./lib/acn-features.js"></script>
+  <script src="./lib/acn-runtime.js"></script>
+  <script src="./lib/acn-wasm-runtime.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
