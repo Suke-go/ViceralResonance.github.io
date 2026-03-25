@@ -1,0 +1,2072 @@
+[
+  {
+    "word": "Yeah.",
+    "start": 0.18,
+    "end": 0.6,
+    "prominence": 0.6176
+  },
+  {
+    "word": "Yeah.",
+    "start": 3.64,
+    "end": 3.88,
+    "prominence": 0.4913
+  },
+  {
+    "word": "La,",
+    "start": 6.4,
+    "end": 6.68,
+    "prominence": 0.4787
+  },
+  {
+    "word": "na,",
+    "start": 6.78,
+    "end": 6.86,
+    "prominence": 0.3359
+  },
+  {
+    "word": "na,",
+    "start": 6.88,
+    "end": 7.16,
+    "prominence": 0.5791
+  },
+  {
+    "word": "na,",
+    "start": 7.16,
+    "end": 7.52,
+    "prominence": 0.4639
+  },
+  {
+    "word": "na.",
+    "start": 7.52,
+    "end": 7.94,
+    "prominence": 0.5246
+  },
+  {
+    "word": "Yeah.",
+    "start": 8.74,
+    "end": 9.26,
+    "prominence": 0.4534
+  },
+  {
+    "word": "I",
+    "start": 11.46,
+    "end": 11.66,
+    "prominence": 0.4944
+  },
+  {
+    "word": "step",
+    "start": 11.66,
+    "end": 11.9,
+    "prominence": 0.4473
+  },
+  {
+    "word": "up",
+    "start": 11.9,
+    "end": 12.06,
+    "prominence": 0.4047
+  },
+  {
+    "word": "to",
+    "start": 12.06,
+    "end": 12.2,
+    "prominence": 0.3999
+  },
+  {
+    "word": "the",
+    "start": 12.2,
+    "end": 12.38,
+    "prominence": 0.4859
+  },
+  {
+    "word": "mic,",
+    "start": 12.38,
+    "end": 12.66,
+    "prominence": 0.444
+  },
+  {
+    "word": "just",
+    "start": 12.72,
+    "end": 13.0,
+    "prominence": 0.6544
+  },
+  {
+    "word": "me",
+    "start": 13.0,
+    "end": 13.22,
+    "prominence": 0.4307
+  },
+  {
+    "word": "and",
+    "start": 13.22,
+    "end": 13.46,
+    "prominence": 0.4565
+  },
+  {
+    "word": "the",
+    "start": 13.46,
+    "end": 13.62,
+    "prominence": 0.3961
+  },
+  {
+    "word": "sound.",
+    "start": 13.62,
+    "end": 13.88,
+    "prominence": 0.4716
+  },
+  {
+    "word": "Every",
+    "start": 14.32,
+    "end": 14.58,
+    "prominence": 0.498
+  },
+  {
+    "word": "word",
+    "start": 14.58,
+    "end": 14.74,
+    "prominence": 0.3757
+  },
+  {
+    "word": "I",
+    "start": 14.74,
+    "end": 14.98,
+    "prominence": 0.5098
+  },
+  {
+    "word": "speak",
+    "start": 14.98,
+    "end": 15.16,
+    "prominence": 0.4858
+  },
+  {
+    "word": "is",
+    "start": 15.16,
+    "end": 15.3,
+    "prominence": 0.452
+  },
+  {
+    "word": "gonna",
+    "start": 15.3,
+    "end": 15.5,
+    "prominence": 0.4199
+  },
+  {
+    "word": "move",
+    "start": 15.5,
+    "end": 15.92,
+    "prominence": 0.5627
+  },
+  {
+    "word": "to",
+    "start": 15.92,
+    "end": 16.14,
+    "prominence": 0.5055
+  },
+  {
+    "word": "ground.",
+    "start": 16.14,
+    "end": 16.4,
+    "prominence": 0.4585
+  },
+  {
+    "word": "Not",
+    "start": 16.84,
+    "end": 17.06,
+    "prominence": 0.4392
+  },
+  {
+    "word": "just",
+    "start": 17.06,
+    "end": 17.22,
+    "prominence": 0.3831
+  },
+  {
+    "word": "in",
+    "start": 17.22,
+    "end": 17.34,
+    "prominence": 0.3909
+  },
+  {
+    "word": "your",
+    "start": 17.34,
+    "end": 17.56,
+    "prominence": 0.4582
+  },
+  {
+    "word": "ears,",
+    "start": 17.56,
+    "end": 17.78,
+    "prominence": 0.519
+  },
+  {
+    "word": "nah,",
+    "start": 17.94,
+    "end": 18.08,
+    "prominence": 0.3983
+  },
+  {
+    "word": "deeper",
+    "start": 18.18,
+    "end": 18.42,
+    "prominence": 0.4538
+  },
+  {
+    "word": "than",
+    "start": 18.42,
+    "end": 18.7,
+    "prominence": 0.5164
+  },
+  {
+    "word": "that.",
+    "start": 18.7,
+    "end": 18.9,
+    "prominence": 0.3852
+  },
+  {
+    "word": "I'm",
+    "start": 19.22,
+    "end": 19.48,
+    "prominence": 0.4831
+  },
+  {
+    "word": "talking",
+    "start": 19.48,
+    "end": 19.68,
+    "prominence": 0.4216
+  },
+  {
+    "word": "to",
+    "start": 19.68,
+    "end": 19.9,
+    "prominence": 0.4445
+  },
+  {
+    "word": "your",
+    "start": 19.9,
+    "end": 20.12,
+    "prominence": 0.5153
+  },
+  {
+    "word": "body,",
+    "start": 20.12,
+    "end": 20.34,
+    "prominence": 0.4592
+  },
+  {
+    "word": "feel",
+    "start": 20.44,
+    "end": 20.58,
+    "prominence": 0.3668
+  },
+  {
+    "word": "the",
+    "start": 20.58,
+    "end": 20.8,
+    "prominence": 0.4432
+  },
+  {
+    "word": "impact.",
+    "start": 20.8,
+    "end": 21.36,
+    "prominence": 0.5634
+  },
+  {
+    "word": "Science",
+    "start": 21.96,
+    "end": 22.3,
+    "prominence": 0.5185
+  },
+  {
+    "word": "in",
+    "start": 22.3,
+    "end": 22.52,
+    "prominence": 0.4262
+  },
+  {
+    "word": "my",
+    "start": 22.52,
+    "end": 22.7,
+    "prominence": 0.4187
+  },
+  {
+    "word": "pocket,",
+    "start": 22.7,
+    "end": 23.08,
+    "prominence": 0.5682
+  },
+  {
+    "word": "signaling",
+    "start": 23.44,
+    "end": 23.7,
+    "prominence": 0.4126
+  },
+  {
+    "word": "my",
+    "start": 23.7,
+    "end": 24.0,
+    "prominence": 0.4559
+  },
+  {
+    "word": "veins.",
+    "start": 24.0,
+    "end": 24.3,
+    "prominence": 0.5138
+  },
+  {
+    "word": "Turning",
+    "start": 24.58,
+    "end": 24.88,
+    "prominence": 0.4424
+  },
+  {
+    "word": "vocal",
+    "start": 24.88,
+    "end": 25.24,
+    "prominence": 0.5394
+  },
+  {
+    "word": "waves",
+    "start": 25.24,
+    "end": 25.58,
+    "prominence": 0.4645
+  },
+  {
+    "word": "to",
+    "start": 25.58,
+    "end": 25.82,
+    "prominence": 0.4164
+  },
+  {
+    "word": "electrical",
+    "start": 25.82,
+    "end": 26.3,
+    "prominence": 0.5692
+  },
+  {
+    "word": "frames.",
+    "start": 26.3,
+    "end": 26.76,
+    "prominence": 0.5697
+  },
+  {
+    "word": "Six",
+    "start": 27.1,
+    "end": 27.36,
+    "prominence": 0.4616
+  },
+  {
+    "word": "features",
+    "start": 27.36,
+    "end": 27.62,
+    "prominence": 0.4375
+  },
+  {
+    "word": "extracted,",
+    "start": 27.62,
+    "end": 28.24,
+    "prominence": 0.5664
+  },
+  {
+    "word": "using",
+    "start": 28.6,
+    "end": 28.92,
+    "prominence": 0.4843
+  },
+  {
+    "word": "the",
+    "start": 28.92,
+    "end": 29.2,
+    "prominence": 0.4604
+  },
+  {
+    "word": "one.",
+    "start": 29.2,
+    "end": 29.42,
+    "prominence": 0.3955
+  },
+  {
+    "word": "The",
+    "start": 29.68,
+    "end": 29.88,
+    "prominence": 0.4173
+  },
+  {
+    "word": "algorithm's",
+    "start": 29.88,
+    "end": 30.5,
+    "prominence": 0.6242
+  },
+  {
+    "word": "ready",
+    "start": 30.5,
+    "end": 30.68,
+    "prominence": 0.4654
+  },
+  {
+    "word": "and",
+    "start": 30.68,
+    "end": 30.9,
+    "prominence": 0.4471
+  },
+  {
+    "word": "we've",
+    "start": 30.9,
+    "end": 31.14,
+    "prominence": 0.4772
+  },
+  {
+    "word": "just",
+    "start": 31.14,
+    "end": 31.4,
+    "prominence": 0.5115
+  },
+  {
+    "word": "begun.",
+    "start": 31.4,
+    "end": 31.76,
+    "prominence": 0.5198
+  },
+  {
+    "word": "Can",
+    "start": 31.94,
+    "end": 32.2,
+    "prominence": 0.4904
+  },
+  {
+    "word": "you",
+    "start": 32.2,
+    "end": 32.52,
+    "prominence": 0.4631
+  },
+  {
+    "word": "feel",
+    "start": 32.52,
+    "end": 33.14,
+    "prominence": 0.471
+  },
+  {
+    "word": "it",
+    "start": 33.14,
+    "end": 33.46,
+    "prominence": 0.4199
+  },
+  {
+    "word": "in",
+    "start": 33.46,
+    "end": 33.6,
+    "prominence": 0.3845
+  },
+  {
+    "word": "your",
+    "start": 33.6,
+    "end": 34.04,
+    "prominence": 0.5607
+  },
+  {
+    "word": "gut?",
+    "start": 34.04,
+    "end": 35.26,
+    "prominence": 0.623
+  },
+  {
+    "word": "Can",
+    "start": 37.12,
+    "end": 37.38,
+    "prominence": 0.4283
+  },
+  {
+    "word": "you",
+    "start": 37.38,
+    "end": 37.48,
+    "prominence": 0.4426
+  },
+  {
+    "word": "feel",
+    "start": 37.48,
+    "end": 37.94,
+    "prominence": 0.6451
+  },
+  {
+    "word": "it",
+    "start": 37.94,
+    "end": 38.18,
+    "prominence": 0.3997
+  },
+  {
+    "word": "in",
+    "start": 38.18,
+    "end": 38.36,
+    "prominence": 0.3998
+  },
+  {
+    "word": "your",
+    "start": 38.36,
+    "end": 38.58,
+    "prominence": 0.4537
+  },
+  {
+    "word": "gut?",
+    "start": 38.58,
+    "end": 39.78,
+    "prominence": 0.6682
+  },
+  {
+    "word": "Come",
+    "start": 40.12,
+    "end": 40.78,
+    "prominence": 0.4792
+  },
+  {
+    "word": "on.",
+    "start": 40.78,
+    "end": 41.02,
+    "prominence": 0.5524
+  },
+  {
+    "word": "Feel",
+    "start": 41.94,
+    "end": 42.38,
+    "prominence": 0.6237
+  },
+  {
+    "word": "it",
+    "start": 42.38,
+    "end": 42.78,
+    "prominence": 0.4175
+  },
+  {
+    "word": "in",
+    "start": 42.78,
+    "end": 42.94,
+    "prominence": 0.4103
+  },
+  {
+    "word": "your",
+    "start": 42.94,
+    "end": 43.32,
+    "prominence": 0.5474
+  },
+  {
+    "word": "gut.",
+    "start": 43.32,
+    "end": 43.6,
+    "prominence": 0.3941
+  },
+  {
+    "word": "Yeah,",
+    "start": 43.74,
+    "end": 44.02,
+    "prominence": 0.5521
+  },
+  {
+    "word": "that's",
+    "start": 44.04,
+    "end": 44.36,
+    "prominence": 0.5649
+  },
+  {
+    "word": "my",
+    "start": 44.36,
+    "end": 44.56,
+    "prominence": 0.4308
+  },
+  {
+    "word": "boy.",
+    "start": 44.56,
+    "end": 44.8,
+    "prominence": 0.4719
+  },
+  {
+    "word": "Every",
+    "start": 44.84,
+    "end": 45.2,
+    "prominence": 0.5557
+  },
+  {
+    "word": "word",
+    "start": 45.2,
+    "end": 45.58,
+    "prominence": 0.4499
+  },
+  {
+    "word": "I",
+    "start": 45.58,
+    "end": 45.96,
+    "prominence": 0.5111
+  },
+  {
+    "word": "drop,",
+    "start": 45.96,
+    "end": 46.18,
+    "prominence": 0.4302
+  },
+  {
+    "word": "you",
+    "start": 46.3,
+    "end": 46.56,
+    "prominence": 0.5578
+  },
+  {
+    "word": "got",
+    "start": 46.56,
+    "end": 46.84,
+    "prominence": 0.476
+  },
+  {
+    "word": "no",
+    "start": 46.84,
+    "end": 47.1,
+    "prominence": 0.416
+  },
+  {
+    "word": "choice.",
+    "start": 47.1,
+    "end": 47.38,
+    "prominence": 0.5678
+  },
+  {
+    "word": "Feel",
+    "start": 47.5,
+    "end": 47.76,
+    "prominence": 0.4096
+  },
+  {
+    "word": "it",
+    "start": 47.76,
+    "end": 47.98,
+    "prominence": 0.4089
+  },
+  {
+    "word": "in",
+    "start": 47.98,
+    "end": 48.16,
+    "prominence": 0.3899
+  },
+  {
+    "word": "since",
+    "start": 48.16,
+    "end": 48.52,
+    "prominence": 0.5818
+  },
+  {
+    "word": "I,",
+    "start": 48.52,
+    "end": 48.86,
+    "prominence": 0.4521
+  },
+  {
+    "word": "it",
+    "start": 48.96,
+    "end": 49.2,
+    "prominence": 0.3914
+  },
+  {
+    "word": "hits",
+    "start": 49.2,
+    "end": 49.42,
+    "prominence": 0.433
+  },
+  {
+    "word": "your",
+    "start": 49.42,
+    "end": 49.76,
+    "prominence": 0.4937
+  },
+  {
+    "word": "core.",
+    "start": 49.76,
+    "end": 50.02,
+    "prominence": 0.4858
+  },
+  {
+    "word": "This",
+    "start": 50.28,
+    "end": 50.54,
+    "prominence": 0.4028
+  },
+  {
+    "word": "is",
+    "start": 50.54,
+    "end": 50.76,
+    "prominence": 0.4657
+  },
+  {
+    "word": "the",
+    "start": 50.76,
+    "end": 51.04,
+    "prominence": 0.4887
+  },
+  {
+    "word": "song,",
+    "start": 51.04,
+    "end": 51.34,
+    "prominence": 0.4177
+  },
+  {
+    "word": "it's",
+    "start": 51.64,
+    "end": 51.88,
+    "prominence": 0.4506
+  },
+  {
+    "word": "something",
+    "start": 51.88,
+    "end": 52.18,
+    "prominence": 0.4651
+  },
+  {
+    "word": "more.",
+    "start": 52.18,
+    "end": 52.5,
+    "prominence": 0.4294
+  },
+  {
+    "word": "Feel",
+    "start": 52.54,
+    "end": 52.9,
+    "prominence": 0.5377
+  },
+  {
+    "word": "it",
+    "start": 52.9,
+    "end": 53.2,
+    "prominence": 0.4107
+  },
+  {
+    "word": "in",
+    "start": 53.2,
+    "end": 53.34,
+    "prominence": 0.4651
+  },
+  {
+    "word": "your",
+    "start": 53.34,
+    "end": 53.68,
+    "prominence": 0.513
+  },
+  {
+    "word": "gut,",
+    "start": 53.68,
+    "end": 54.02,
+    "prominence": 0.487
+  },
+  {
+    "word": "right",
+    "start": 54.24,
+    "end": 54.46,
+    "prominence": 0.4034
+  },
+  {
+    "word": "where",
+    "start": 54.46,
+    "end": 54.62,
+    "prominence": 0.4016
+  },
+  {
+    "word": "it",
+    "start": 54.62,
+    "end": 55.0,
+    "prominence": 0.6652
+  },
+  {
+    "word": "lands.",
+    "start": 55.0,
+    "end": 55.16,
+    "prominence": 0.4215
+  },
+  {
+    "word": "Speak",
+    "start": 55.2,
+    "end": 55.44,
+    "prominence": 0.4935
+  },
+  {
+    "word": "it",
+    "start": 55.44,
+    "end": 55.58,
+    "prominence": 0.5275
+  },
+  {
+    "word": "school,",
+    "start": 55.58,
+    "end": 55.84,
+    "prominence": 0.613
+  },
+  {
+    "word": "yours",
+    "start": 56.1,
+    "end": 56.14,
+    "prominence": 0.3352
+  },
+  {
+    "word": "no",
+    "start": 56.14,
+    "end": 56.38,
+    "prominence": 0.6111
+  },
+  {
+    "word": "much.",
+    "start": 56.38,
+    "end": 56.64,
+    "prominence": 0.4933
+  },
+  {
+    "word": "That's",
+    "start": 56.78,
+    "end": 57.32,
+    "prominence": 0.6674
+  },
+  {
+    "word": "the",
+    "start": 57.32,
+    "end": 57.52,
+    "prominence": 0.4025
+  },
+  {
+    "word": "plan.",
+    "start": 57.52,
+    "end": 57.76,
+    "prominence": 0.5323
+  },
+  {
+    "word": "Yeah,",
+    "start": 57.84,
+    "end": 59.08,
+    "prominence": 0.7035
+  },
+  {
+    "word": "yeah,",
+    "start": 59.5,
+    "end": 60.26,
+    "prominence": 0.6032
+  },
+  {
+    "word": "yeah,",
+    "start": 60.4,
+    "end": 60.42,
+    "prominence": 0.2854
+  },
+  {
+    "word": "yeah,",
+    "start": 60.42,
+    "end": 60.44,
+    "prominence": 0.196
+  },
+  {
+    "word": "yeah,",
+    "start": 60.46,
+    "end": 61.16,
+    "prominence": 0.7651
+  },
+  {
+    "word": "yeah,",
+    "start": 61.32,
+    "end": 61.34,
+    "prominence": 0.2955
+  },
+  {
+    "word": "yeah,",
+    "start": 61.34,
+    "end": 61.36,
+    "prominence": 0.1959
+  },
+  {
+    "word": "yeah,",
+    "start": 61.36,
+    "end": 61.52,
+    "prominence": 0.4421
+  },
+  {
+    "word": "yeah.",
+    "start": 61.52,
+    "end": 61.98,
+    "prominence": 0.4981
+  },
+  {
+    "word": "Electros",
+    "start": 62.92,
+    "end": 63.54,
+    "prominence": 0.6091
+  },
+  {
+    "word": "on",
+    "start": 63.54,
+    "end": 63.74,
+    "prominence": 0.5073
+  },
+  {
+    "word": "your",
+    "start": 63.74,
+    "end": 63.96,
+    "prominence": 0.5009
+  },
+  {
+    "word": "belly,",
+    "start": 63.96,
+    "end": 64.28,
+    "prominence": 0.4959
+  },
+  {
+    "word": "calibrate",
+    "start": 64.68,
+    "end": 65.14,
+    "prominence": 0.5153
+  },
+  {
+    "word": "it",
+    "start": 65.14,
+    "end": 65.34,
+    "prominence": 0.574
+  },
+  {
+    "word": "right.",
+    "start": 65.34,
+    "end": 65.54,
+    "prominence": 0.4897
+  },
+  {
+    "word": "Two",
+    "start": 65.86,
+    "end": 66.16,
+    "prominence": 0.504
+  },
+  {
+    "word": "seconds",
+    "start": 66.16,
+    "end": 66.48,
+    "prominence": 0.5135
+  },
+  {
+    "word": "flat",
+    "start": 66.48,
+    "end": 66.8,
+    "prominence": 0.4948
+  },
+  {
+    "word": "and",
+    "start": 66.8,
+    "end": 67.02,
+    "prominence": 0.4777
+  },
+  {
+    "word": "we",
+    "start": 67.02,
+    "end": 67.24,
+    "prominence": 0.4372
+  },
+  {
+    "word": "locked",
+    "start": 67.24,
+    "end": 67.52,
+    "prominence": 0.4941
+  },
+  {
+    "word": "in",
+    "start": 67.52,
+    "end": 67.84,
+    "prominence": 0.4668
+  },
+  {
+    "word": "tight.",
+    "start": 67.84,
+    "end": 68.08,
+    "prominence": 0.5912
+  },
+  {
+    "word": "Prominence",
+    "start": 68.44,
+    "end": 68.98,
+    "prominence": 0.554
+  },
+  {
+    "word": "detection,",
+    "start": 68.98,
+    "end": 69.56,
+    "prominence": 0.5232
+  },
+  {
+    "word": "peaks",
+    "start": 69.82,
+    "end": 69.98,
+    "prominence": 0.4836
+  },
+  {
+    "word": "above",
+    "start": 69.98,
+    "end": 70.26,
+    "prominence": 0.463
+  },
+  {
+    "word": "the",
+    "start": 70.26,
+    "end": 70.46,
+    "prominence": 0.5023
+  },
+  {
+    "word": "noise.",
+    "start": 70.46,
+    "end": 70.72,
+    "prominence": 0.4939
+  },
+  {
+    "word": "Geometric",
+    "start": 71.06,
+    "end": 71.66,
+    "prominence": 0.5654
+  },
+  {
+    "word": "mean,",
+    "start": 71.66,
+    "end": 71.98,
+    "prominence": 0.3887
+  },
+  {
+    "word": "that's",
+    "start": 72.2,
+    "end": 72.4,
+    "prominence": 0.5213
+  },
+  {
+    "word": "how",
+    "start": 72.4,
+    "end": 72.5,
+    "prominence": 0.3626
+  },
+  {
+    "word": "we",
+    "start": 72.5,
+    "end": 72.66,
+    "prominence": 0.5019
+  },
+  {
+    "word": "find",
+    "start": 72.66,
+    "end": 72.86,
+    "prominence": 0.451
+  },
+  {
+    "word": "the",
+    "start": 72.86,
+    "end": 73.1,
+    "prominence": 0.5256
+  },
+  {
+    "word": "poise.",
+    "start": 73.1,
+    "end": 73.38,
+    "prominence": 0.4851
+  },
+  {
+    "word": "80",
+    "start": 73.6,
+    "end": 73.86,
+    "prominence": 0.4411
+  },
+  {
+    "word": "hertz",
+    "start": 73.86,
+    "end": 74.12,
+    "prominence": 0.4821
+  },
+  {
+    "word": "is",
+    "start": 74.12,
+    "end": 74.3,
+    "prominence": 0.4763
+  },
+  {
+    "word": "pulsing,",
+    "start": 74.3,
+    "end": 74.82,
+    "prominence": 0.6336
+  },
+  {
+    "word": "riding",
+    "start": 75.02,
+    "end": 75.2,
+    "prominence": 0.3936
+  },
+  {
+    "word": "on",
+    "start": 75.2,
+    "end": 75.42,
+    "prominence": 0.4303
+  },
+  {
+    "word": "my",
+    "start": 75.42,
+    "end": 75.66,
+    "prominence": 0.4481
+  },
+  {
+    "word": "flow.",
+    "start": 75.66,
+    "end": 75.84,
+    "prominence": 0.4201
+  },
+  {
+    "word": "Every",
+    "start": 75.92,
+    "end": 76.18,
+    "prominence": 0.6357
+  },
+  {
+    "word": "syllable",
+    "start": 76.18,
+    "end": 76.62,
+    "prominence": 0.4958
+  },
+  {
+    "word": "you",
+    "start": 76.62,
+    "end": 76.88,
+    "prominence": 0.4836
+  },
+  {
+    "word": "hear,",
+    "start": 76.88,
+    "end": 77.12,
+    "prominence": 0.4453
+  },
+  {
+    "word": "your",
+    "start": 77.3,
+    "end": 77.48,
+    "prominence": 0.4189
+  },
+  {
+    "word": "muscles",
+    "start": 77.48,
+    "end": 77.74,
+    "prominence": 0.5589
+  },
+  {
+    "word": "gonna",
+    "start": 77.74,
+    "end": 78.04,
+    "prominence": 0.5036
+  },
+  {
+    "word": "know.",
+    "start": 78.04,
+    "end": 78.34,
+    "prominence": 0.4737
+  },
+  {
+    "word": "Now",
+    "start": 78.4,
+    "end": 78.6,
+    "prominence": 0.4838
+  },
+  {
+    "word": "vibration",
+    "start": 78.6,
+    "end": 79.08,
+    "prominence": 0.5626
+  },
+  {
+    "word": "on",
+    "start": 79.08,
+    "end": 79.3,
+    "prominence": 0.4164
+  },
+  {
+    "word": "the",
+    "start": 79.3,
+    "end": 79.5,
+    "prominence": 0.453
+  },
+  {
+    "word": "skin,",
+    "start": 79.5,
+    "end": 79.72,
+    "prominence": 0.4236
+  },
+  {
+    "word": "we're",
+    "start": 79.98,
+    "end": 80.18,
+    "prominence": 0.487
+  },
+  {
+    "word": "going",
+    "start": 80.18,
+    "end": 80.3,
+    "prominence": 0.4303
+  },
+  {
+    "word": "further",
+    "start": 80.3,
+    "end": 80.66,
+    "prominence": 0.5459
+  },
+  {
+    "word": "in.",
+    "start": 80.66,
+    "end": 81.0,
+    "prominence": 0.4093
+  },
+  {
+    "word": "Pencil-roll",
+    "start": 81.32,
+    "end": 81.84,
+    "prominence": 0.5466
+  },
+  {
+    "word": "sensation,",
+    "start": 81.84,
+    "end": 82.24,
+    "prominence": 0.4815
+  },
+  {
+    "word": "let",
+    "start": 82.34,
+    "end": 82.48,
+    "prominence": 0.4393
+  },
+  {
+    "word": "the",
+    "start": 82.48,
+    "end": 82.7,
+    "prominence": 0.6183
+  },
+  {
+    "word": "demo",
+    "start": 82.7,
+    "end": 82.94,
+    "prominence": 0.4511
+  },
+  {
+    "word": "begin.",
+    "start": 82.94,
+    "end": 83.38,
+    "prominence": 0.5249
+  },
+  {
+    "word": "Yeah.",
+    "start": 83.62,
+    "end": 84.12,
+    "prominence": 0.4618
+  },
+  {
+    "word": "Yeah.",
+    "start": 84.34,
+    "end": 84.88,
+    "prominence": 0.4892
+  },
+  {
+    "word": "Yeah.",
+    "start": 85.5,
+    "end": 85.88,
+    "prominence": 0.4967
+  },
+  {
+    "word": "You",
+    "start": 87.36,
+    "end": 87.5,
+    "prominence": 0.5158
+  },
+  {
+    "word": "ready?",
+    "start": 87.5,
+    "end": 87.76,
+    "prominence": 0.4309
+  },
+  {
+    "word": "You",
+    "start": 91.82,
+    "end": 91.96,
+    "prominence": 0.3794
+  },
+  {
+    "word": "ready",
+    "start": 91.96,
+    "end": 92.16,
+    "prominence": 0.4357
+  },
+  {
+    "word": "for",
+    "start": 92.16,
+    "end": 92.34,
+    "prominence": 0.3999
+  },
+  {
+    "word": "this?",
+    "start": 92.34,
+    "end": 92.56,
+    "prominence": 0.4657
+  },
+  {
+    "word": "Feel",
+    "start": 93.52,
+    "end": 94.0,
+    "prominence": 0.5863
+  },
+  {
+    "word": "it",
+    "start": 94.0,
+    "end": 94.34,
+    "prominence": 0.4109
+  },
+  {
+    "word": "in",
+    "start": 94.34,
+    "end": 94.6,
+    "prominence": 0.4618
+  },
+  {
+    "word": "your",
+    "start": 94.6,
+    "end": 94.94,
+    "prominence": 0.4993
+  },
+  {
+    "word": "gut.",
+    "start": 94.94,
+    "end": 95.2,
+    "prominence": 0.4189
+  },
+  {
+    "word": "Yeah,",
+    "start": 95.3,
+    "end": 95.6,
+    "prominence": 0.4972
+  },
+  {
+    "word": "that's",
+    "start": 95.62,
+    "end": 95.96,
+    "prominence": 0.5172
+  },
+  {
+    "word": "my",
+    "start": 95.96,
+    "end": 96.16,
+    "prominence": 0.4395
+  },
+  {
+    "word": "boy.",
+    "start": 96.16,
+    "end": 96.42,
+    "prominence": 0.4917
+  },
+  {
+    "word": "Every",
+    "start": 96.48,
+    "end": 96.82,
+    "prominence": 0.4706
+  },
+  {
+    "word": "word",
+    "start": 96.82,
+    "end": 97.16,
+    "prominence": 0.4331
+  },
+  {
+    "word": "I",
+    "start": 97.16,
+    "end": 97.48,
+    "prominence": 0.5091
+  },
+  {
+    "word": "drop,",
+    "start": 97.48,
+    "end": 97.8,
+    "prominence": 0.4175
+  },
+  {
+    "word": "you",
+    "start": 97.98,
+    "end": 98.16,
+    "prominence": 0.4944
+  },
+  {
+    "word": "got",
+    "start": 98.16,
+    "end": 98.42,
+    "prominence": 0.4942
+  },
+  {
+    "word": "no",
+    "start": 98.42,
+    "end": 98.74,
+    "prominence": 0.495
+  },
+  {
+    "word": "choice.",
+    "start": 98.74,
+    "end": 99.02,
+    "prominence": 0.4545
+  },
+  {
+    "word": "Prominence",
+    "start": 99.04,
+    "end": 99.88,
+    "prominence": 0.6628
+  },
+  {
+    "word": "inside,",
+    "start": 99.88,
+    "end": 100.36,
+    "prominence": 0.5714
+  },
+  {
+    "word": "it",
+    "start": 100.62,
+    "end": 100.82,
+    "prominence": 0.4111
+  },
+  {
+    "word": "hits",
+    "start": 100.82,
+    "end": 101.0,
+    "prominence": 0.4224
+  },
+  {
+    "word": "your",
+    "start": 101.0,
+    "end": 101.38,
+    "prominence": 0.5419
+  },
+  {
+    "word": "core.",
+    "start": 101.38,
+    "end": 101.6,
+    "prominence": 0.3849
+  },
+  {
+    "word": "This",
+    "start": 101.66,
+    "end": 101.9,
+    "prominence": 0.5023
+  },
+  {
+    "word": "ain't",
+    "start": 101.9,
+    "end": 102.12,
+    "prominence": 0.4133
+  },
+  {
+    "word": "just",
+    "start": 102.12,
+    "end": 102.38,
+    "prominence": 0.4753
+  },
+  {
+    "word": "a",
+    "start": 102.38,
+    "end": 102.66,
+    "prominence": 0.4808
+  },
+  {
+    "word": "song,",
+    "start": 102.66,
+    "end": 102.96,
+    "prominence": 0.4739
+  },
+  {
+    "word": "it's",
+    "start": 103.24,
+    "end": 103.52,
+    "prominence": 0.4669
+  },
+  {
+    "word": "something",
+    "start": 103.52,
+    "end": 103.8,
+    "prominence": 0.4243
+  },
+  {
+    "word": "more.",
+    "start": 103.8,
+    "end": 104.16,
+    "prominence": 0.4565
+  },
+  {
+    "word": "Feel",
+    "start": 104.18,
+    "end": 104.52,
+    "prominence": 0.5065
+  },
+  {
+    "word": "it",
+    "start": 104.52,
+    "end": 104.8,
+    "prominence": 0.4113
+  },
+  {
+    "word": "in",
+    "start": 104.8,
+    "end": 104.96,
+    "prominence": 0.4863
+  },
+  {
+    "word": "your",
+    "start": 104.96,
+    "end": 105.24,
+    "prominence": 0.4517
+  },
+  {
+    "word": "gut,",
+    "start": 105.24,
+    "end": 105.6,
+    "prominence": 0.5552
+  },
+  {
+    "word": "where",
+    "start": 106.04,
+    "end": 106.34,
+    "prominence": 0.4068
+  },
+  {
+    "word": "it",
+    "start": 106.34,
+    "end": 106.56,
+    "prominence": 0.4202
+  },
+  {
+    "word": "lands.",
+    "start": 106.56,
+    "end": 106.76,
+    "prominence": 0.4622
+  },
+  {
+    "word": "Speak",
+    "start": 106.78,
+    "end": 107.08,
+    "prominence": 0.5167
+  },
+  {
+    "word": "it",
+    "start": 107.08,
+    "end": 107.34,
+    "prominence": 0.4493
+  },
+  {
+    "word": "to",
+    "start": 107.34,
+    "end": 107.46,
+    "prominence": 0.3617
+  },
+  {
+    "word": "your",
+    "start": 107.46,
+    "end": 107.74,
+    "prominence": 0.6031
+  },
+  {
+    "word": "school,",
+    "start": 107.74,
+    "end": 108.02,
+    "prominence": 0.409
+  },
+  {
+    "word": "my",
+    "start": 108.22,
+    "end": 108.46,
+    "prominence": 0.4495
+  },
+  {
+    "word": "best",
+    "start": 108.46,
+    "end": 108.82,
+    "prominence": 0.6232
+  },
+  {
+    "word": "of",
+    "start": 108.82,
+    "end": 109.18,
+    "prominence": 0.4075
+  },
+  {
+    "word": "plan.",
+    "start": 109.18,
+    "end": 109.42,
+    "prominence": 0.404
+  },
+  {
+    "word": "Whoa,",
+    "start": 109.56,
+    "end": 110.38,
+    "prominence": 0.6219
+  },
+  {
+    "word": "whoa,",
+    "start": 111.12,
+    "end": 111.8,
+    "prominence": 0.5936
+  },
+  {
+    "word": "whoa,",
+    "start": 112.0,
+    "end": 112.18,
+    "prominence": 0.3893
+  },
+  {
+    "word": "whoa,",
+    "start": 112.18,
+    "end": 112.86,
+    "prominence": 0.6846
+  },
+  {
+    "word": "whoa,",
+    "start": 113.6,
+    "end": 113.62,
+    "prominence": 0.3124
+  },
+  {
+    "word": "whoa,",
+    "start": 113.8,
+    "end": 113.9,
+    "prominence": 0.3668
+  },
+  {
+    "word": "whoa,",
+    "start": 113.9,
+    "end": 114.16,
+    "prominence": 0.5307
+  },
+  {
+    "word": "whoa,",
+    "start": 114.16,
+    "end": 114.24,
+    "prominence": 0.3112
+  },
+  {
+    "word": "whoa.",
+    "start": 114.24,
+    "end": 114.44,
+    "prominence": 0.5173
+  },
+  {
+    "word": "Words",
+    "start": 114.86,
+    "end": 115.28,
+    "prominence": 0.5435
+  },
+  {
+    "word": "are",
+    "start": 115.28,
+    "end": 115.68,
+    "prominence": 0.4792
+  },
+  {
+    "word": "just",
+    "start": 115.68,
+    "end": 116.22,
+    "prominence": 0.4715
+  },
+  {
+    "word": "vibrations,",
+    "start": 116.22,
+    "end": 117.24,
+    "prominence": 0.6052
+  },
+  {
+    "word": "until",
+    "start": 118.18,
+    "end": 118.4,
+    "prominence": 0.4007
+  },
+  {
+    "word": "they",
+    "start": 118.4,
+    "end": 118.76,
+    "prominence": 0.5175
+  },
+  {
+    "word": "reach",
+    "start": 118.76,
+    "end": 119.1,
+    "prominence": 0.4457
+  },
+  {
+    "word": "your",
+    "start": 119.1,
+    "end": 119.42,
+    "prominence": 0.4124
+  },
+  {
+    "word": "belly.",
+    "start": 119.42,
+    "end": 119.7,
+    "prominence": 0.5014
+  },
+  {
+    "word": "Signals",
+    "start": 120.04,
+    "end": 120.68,
+    "prominence": 0.5544
+  },
+  {
+    "word": "cross",
+    "start": 120.68,
+    "end": 121.32,
+    "prominence": 0.5038
+  },
+  {
+    "word": "the",
+    "start": 121.32,
+    "end": 122.04,
+    "prominence": 0.5454
+  },
+  {
+    "word": "boundary,",
+    "start": 122.04,
+    "end": 122.44,
+    "prominence": 0.4565
+  },
+  {
+    "word": "between",
+    "start": 123.14,
+    "end": 123.62,
+    "prominence": 0.4731
+  },
+  {
+    "word": "the",
+    "start": 123.62,
+    "end": 124.06,
+    "prominence": 0.49
+  },
+  {
+    "word": "mind",
+    "start": 124.06,
+    "end": 124.32,
+    "prominence": 0.4386
+  },
+  {
+    "word": "and",
+    "start": 124.32,
+    "end": 124.64,
+    "prominence": 0.4444
+  },
+  {
+    "word": "body",
+    "start": 124.64,
+    "end": 124.92,
+    "prominence": 0.4404
+  },
+  {
+    "word": "augmented.",
+    "start": 124.92,
+    "end": 125.5,
+    "prominence": 0.537
+  },
+  {
+    "word": "Human,",
+    "start": 127.42,
+    "end": 128.84,
+    "prominence": 0.7105
+  },
+  {
+    "word": "listening.",
+    "start": 129.9,
+    "end": 130.52,
+    "prominence": 0.4683
+  },
+  {
+    "word": "Feel",
+    "start": 132.24,
+    "end": 132.74,
+    "prominence": 0.5266
+  },
+  {
+    "word": "it",
+    "start": 132.74,
+    "end": 133.12,
+    "prominence": 0.4174
+  },
+  {
+    "word": "in",
+    "start": 133.12,
+    "end": 133.34,
+    "prominence": 0.4585
+  },
+  {
+    "word": "your",
+    "start": 133.34,
+    "end": 133.66,
+    "prominence": 0.4489
+  },
+  {
+    "word": "gut.",
+    "start": 133.66,
+    "end": 133.96,
+    "prominence": 0.4872
+  },
+  {
+    "word": "Yeah,",
+    "start": 134.02,
+    "end": 134.36,
+    "prominence": 0.514
+  },
+  {
+    "word": "that's",
+    "start": 134.38,
+    "end": 134.66,
+    "prominence": 0.5645
+  },
+  {
+    "word": "my",
+    "start": 134.66,
+    "end": 134.86,
+    "prominence": 0.4222
+  },
+  {
+    "word": "voice.",
+    "start": 134.86,
+    "end": 135.18,
+    "prominence": 0.54
+  },
+  {
+    "word": "Every",
+    "start": 135.3,
+    "end": 135.54,
+    "prominence": 0.4471
+  },
+  {
+    "word": "word",
+    "start": 135.54,
+    "end": 135.92,
+    "prominence": 0.5111
+  },
+  {
+    "word": "I",
+    "start": 135.92,
+    "end": 136.24,
+    "prominence": 0.4541
+  },
+  {
+    "word": "drop,",
+    "start": 136.24,
+    "end": 136.52,
+    "prominence": 0.4086
+  },
+  {
+    "word": "you",
+    "start": 136.7,
+    "end": 136.86,
+    "prominence": 0.5411
+  },
+  {
+    "word": "got",
+    "start": 136.86,
+    "end": 137.14,
+    "prominence": 0.4876
+  },
+  {
+    "word": "no",
+    "start": 137.14,
+    "end": 137.48,
+    "prominence": 0.5267
+  },
+  {
+    "word": "choice.",
+    "start": 137.48,
+    "end": 137.82,
+    "prominence": 0.4783
+  },
+  {
+    "word": "Yeah.",
+    "start": 137.82,
+    "end": 138.2,
+    "prominence": 0.4163
+  },
+  {
+    "word": "It's",
+    "start": 139.38,
+    "end": 139.78,
+    "prominence": 0.5521
+  },
+  {
+    "word": "your",
+    "start": 139.78,
+    "end": 140.06,
+    "prominence": 0.4143
+  },
+  {
+    "word": "core,",
+    "start": 140.06,
+    "end": 140.36,
+    "prominence": 0.4431
+  },
+  {
+    "word": "it's",
+    "start": 140.5,
+    "end": 140.68,
+    "prominence": 0.4668
+  },
+  {
+    "word": "ain't",
+    "start": 140.68,
+    "end": 140.9,
+    "prominence": 0.4497
+  },
+  {
+    "word": "just",
+    "start": 140.9,
+    "end": 141.12,
+    "prominence": 0.4921
+  },
+  {
+    "word": "a",
+    "start": 141.12,
+    "end": 141.34,
+    "prominence": 0.4195
+  },
+  {
+    "word": "song,",
+    "start": 141.34,
+    "end": 141.7,
+    "prominence": 0.5416
+  },
+  {
+    "word": "it's",
+    "start": 141.9,
+    "end": 142.26,
+    "prominence": 0.5341
+  },
+  {
+    "word": "something",
+    "start": 142.26,
+    "end": 142.54,
+    "prominence": 0.4526
+  },
+  {
+    "word": "more.",
+    "start": 142.54,
+    "end": 142.9,
+    "prominence": 0.4794
+  },
+  {
+    "word": "Can",
+    "start": 142.92,
+    "end": 143.16,
+    "prominence": 0.4233
+  },
+  {
+    "word": "you",
+    "start": 143.16,
+    "end": 143.52,
+    "prominence": 0.5101
+  },
+  {
+    "word": "feel",
+    "start": 143.52,
+    "end": 143.96,
+    "prominence": 0.4396
+  },
+  {
+    "word": "it",
+    "start": 143.96,
+    "end": 144.46,
+    "prominence": 0.449
+  },
+  {
+    "word": "in",
+    "start": 144.46,
+    "end": 144.84,
+    "prominence": 0.4333
+  },
+  {
+    "word": "your",
+    "start": 144.84,
+    "end": 144.86,
+    "prominence": 0.28
+  },
+  {
+    "word": "gut?",
+    "start": 144.86,
+    "end": 144.98,
+    "prominence": 0.441
+  },
+  {
+    "word": "Listen,",
+    "start": 146.84,
+    "end": 147.12,
+    "prominence": 0.5345
+  },
+  {
+    "word": "bro,",
+    "start": 147.4,
+    "end": 147.48,
+    "prominence": 0.4013
+  },
+  {
+    "word": "listen,",
+    "start": 147.62,
+    "end": 147.8,
+    "prominence": 0.4815
+  },
+  {
+    "word": "bro.",
+    "start": 147.8,
+    "end": 148.1,
+    "prominence": 0.5226
+  },
+  {
+    "word": "Can",
+    "start": 148.14,
+    "end": 148.38,
+    "prominence": 0.4053
+  },
+  {
+    "word": "you",
+    "start": 148.38,
+    "end": 148.74,
+    "prominence": 0.504
+  },
+  {
+    "word": "feel",
+    "start": 148.74,
+    "end": 149.18,
+    "prominence": 0.471
+  },
+  {
+    "word": "it",
+    "start": 149.18,
+    "end": 149.88,
+    "prominence": 0.4792
+  },
+  {
+    "word": "in",
+    "start": 149.88,
+    "end": 149.9,
+    "prominence": 0.2959
+  },
+  {
+    "word": "your",
+    "start": 149.9,
+    "end": 149.92,
+    "prominence": 0.2188
+  },
+  {
+    "word": "gut?",
+    "start": 149.92,
+    "end": 150.16,
+    "prominence": 0.4642
+  },
+  {
+    "word": "Feel",
+    "start": 151.8,
+    "end": 152.08,
+    "prominence": 0.5058
+  },
+  {
+    "word": "it.",
+    "start": 152.08,
+    "end": 152.36,
+    "prominence": 0.5072
+  },
+  {
+    "word": "Yeah.",
+    "start": 152.6,
+    "end": 153.06,
+    "prominence": 0.4367
+  },
+  {
+    "word": "Yeah.",
+    "start": 153.88,
+    "end": 154.22,
+    "prominence": 0.4255
+  }
+]

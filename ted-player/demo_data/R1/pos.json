@@ -1,0 +1,2417 @@
+[
+  {
+    "word": "Yeah.",
+    "start": 0.18,
+    "end": 0.6,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "Yeah.",
+    "start": 3.64,
+    "end": 3.88,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "La,",
+    "start": 6.4,
+    "end": 6.68,
+    "pos": "PROPN",
+    "is_content": true
+  },
+  {
+    "word": "na,",
+    "start": 6.78,
+    "end": 6.86,
+    "pos": "PART",
+    "is_content": false
+  },
+  {
+    "word": "na,",
+    "start": 6.88,
+    "end": 7.16,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "na,",
+    "start": 7.16,
+    "end": 7.52,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "na.",
+    "start": 7.52,
+    "end": 7.94,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "Yeah.",
+    "start": 8.74,
+    "end": 9.26,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "I",
+    "start": 11.46,
+    "end": 11.66,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "step",
+    "start": 11.66,
+    "end": 11.9,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "up",
+    "start": 11.9,
+    "end": 12.06,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "to",
+    "start": 12.06,
+    "end": 12.2,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "the",
+    "start": 12.2,
+    "end": 12.38,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "mic,",
+    "start": 12.38,
+    "end": 12.66,
+    "pos": "ADJ",
+    "is_content": true
+  },
+  {
+    "word": "just",
+    "start": 12.72,
+    "end": 13.0,
+    "pos": "ADV",
+    "is_content": true
+  },
+  {
+    "word": "me",
+    "start": 13.0,
+    "end": 13.22,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "and",
+    "start": 13.22,
+    "end": 13.46,
+    "pos": "CCONJ",
+    "is_content": false
+  },
+  {
+    "word": "the",
+    "start": 13.46,
+    "end": 13.62,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "sound.",
+    "start": 13.62,
+    "end": 13.88,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Every",
+    "start": 14.32,
+    "end": 14.58,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "word",
+    "start": 14.58,
+    "end": 14.74,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "I",
+    "start": 14.74,
+    "end": 14.98,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "speak",
+    "start": 14.98,
+    "end": 15.16,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "is",
+    "start": 15.16,
+    "end": 15.3,
+    "pos": "AUX",
+    "is_content": false
+  },
+  {
+    "word": "gonna",
+    "start": 15.3,
+    "end": 15.5,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "move",
+    "start": 15.5,
+    "end": 15.92,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "to",
+    "start": 15.92,
+    "end": 16.14,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "ground.",
+    "start": 16.14,
+    "end": 16.4,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Not",
+    "start": 16.84,
+    "end": 17.06,
+    "pos": "PART",
+    "is_content": false
+  },
+  {
+    "word": "just",
+    "start": 17.06,
+    "end": 17.22,
+    "pos": "ADV",
+    "is_content": true
+  },
+  {
+    "word": "in",
+    "start": 17.22,
+    "end": 17.34,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "your",
+    "start": 17.34,
+    "end": 17.56,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "ears,",
+    "start": 17.56,
+    "end": 17.78,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "nah,",
+    "start": 17.94,
+    "end": 18.08,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "deeper",
+    "start": 18.18,
+    "end": 18.42,
+    "pos": "ADJ",
+    "is_content": true
+  },
+  {
+    "word": "than",
+    "start": 18.42,
+    "end": 18.7,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "that.",
+    "start": 18.7,
+    "end": 18.9,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "I'm",
+    "start": 19.22,
+    "end": 19.48,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "talking",
+    "start": 19.48,
+    "end": 19.68,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "to",
+    "start": 19.68,
+    "end": 19.9,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "your",
+    "start": 19.9,
+    "end": 20.12,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "body,",
+    "start": 20.12,
+    "end": 20.34,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "feel",
+    "start": 20.44,
+    "end": 20.58,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "the",
+    "start": 20.58,
+    "end": 20.8,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "impact.",
+    "start": 20.8,
+    "end": 21.36,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Science",
+    "start": 21.96,
+    "end": 22.3,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "in",
+    "start": 22.3,
+    "end": 22.52,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "my",
+    "start": 22.52,
+    "end": 22.7,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "pocket,",
+    "start": 22.7,
+    "end": 23.08,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "signaling",
+    "start": 23.44,
+    "end": 23.7,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "my",
+    "start": 23.7,
+    "end": 24.0,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "veins.",
+    "start": 24.0,
+    "end": 24.3,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Turning",
+    "start": 24.58,
+    "end": 24.88,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "vocal",
+    "start": 24.88,
+    "end": 25.24,
+    "pos": "ADJ",
+    "is_content": true
+  },
+  {
+    "word": "waves",
+    "start": 25.24,
+    "end": 25.58,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "to",
+    "start": 25.58,
+    "end": 25.82,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "electrical",
+    "start": 25.82,
+    "end": 26.3,
+    "pos": "ADJ",
+    "is_content": true
+  },
+  {
+    "word": "frames.",
+    "start": 26.3,
+    "end": 26.76,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Six",
+    "start": 27.1,
+    "end": 27.36,
+    "pos": "NUM",
+    "is_content": false
+  },
+  {
+    "word": "features",
+    "start": 27.36,
+    "end": 27.62,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "extracted,",
+    "start": 27.62,
+    "end": 28.24,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "using",
+    "start": 28.6,
+    "end": 28.92,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "the",
+    "start": 28.92,
+    "end": 29.2,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "one.",
+    "start": 29.2,
+    "end": 29.42,
+    "pos": "NUM",
+    "is_content": false
+  },
+  {
+    "word": "The",
+    "start": 29.68,
+    "end": 29.88,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "algorithm's",
+    "start": 29.88,
+    "end": 30.5,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "ready",
+    "start": 30.5,
+    "end": 30.68,
+    "pos": "ADJ",
+    "is_content": true
+  },
+  {
+    "word": "and",
+    "start": 30.68,
+    "end": 30.9,
+    "pos": "CCONJ",
+    "is_content": false
+  },
+  {
+    "word": "we've",
+    "start": 30.9,
+    "end": 31.14,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "just",
+    "start": 31.14,
+    "end": 31.4,
+    "pos": "ADV",
+    "is_content": true
+  },
+  {
+    "word": "begun.",
+    "start": 31.4,
+    "end": 31.76,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "Can",
+    "start": 31.94,
+    "end": 32.2,
+    "pos": "AUX",
+    "is_content": false
+  },
+  {
+    "word": "you",
+    "start": 32.2,
+    "end": 32.52,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "feel",
+    "start": 32.52,
+    "end": 33.14,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "it",
+    "start": 33.14,
+    "end": 33.46,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "in",
+    "start": 33.46,
+    "end": 33.6,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "your",
+    "start": 33.6,
+    "end": 34.04,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "gut?",
+    "start": 34.04,
+    "end": 35.26,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Can",
+    "start": 37.12,
+    "end": 37.38,
+    "pos": "AUX",
+    "is_content": false
+  },
+  {
+    "word": "you",
+    "start": 37.38,
+    "end": 37.48,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "feel",
+    "start": 37.48,
+    "end": 37.94,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "it",
+    "start": 37.94,
+    "end": 38.18,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "in",
+    "start": 38.18,
+    "end": 38.36,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "your",
+    "start": 38.36,
+    "end": 38.58,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "gut?",
+    "start": 38.58,
+    "end": 39.78,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Come",
+    "start": 40.12,
+    "end": 40.78,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "on.",
+    "start": 40.78,
+    "end": 41.02,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "Feel",
+    "start": 41.94,
+    "end": 42.38,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "it",
+    "start": 42.38,
+    "end": 42.78,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "in",
+    "start": 42.78,
+    "end": 42.94,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "your",
+    "start": 42.94,
+    "end": 43.32,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "gut.",
+    "start": 43.32,
+    "end": 43.6,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Yeah,",
+    "start": 43.74,
+    "end": 44.02,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "that's",
+    "start": 44.04,
+    "end": 44.36,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "my",
+    "start": 44.36,
+    "end": 44.56,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "boy.",
+    "start": 44.56,
+    "end": 44.8,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Every",
+    "start": 44.84,
+    "end": 45.2,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "word",
+    "start": 45.2,
+    "end": 45.58,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "I",
+    "start": 45.58,
+    "end": 45.96,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "drop,",
+    "start": 45.96,
+    "end": 46.18,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "you",
+    "start": 46.3,
+    "end": 46.56,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "got",
+    "start": 46.56,
+    "end": 46.84,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "no",
+    "start": 46.84,
+    "end": 47.1,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "choice.",
+    "start": 47.1,
+    "end": 47.38,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Feel",
+    "start": 47.5,
+    "end": 47.76,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "it",
+    "start": 47.76,
+    "end": 47.98,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "in",
+    "start": 47.98,
+    "end": 48.16,
+    "pos": "ADV",
+    "is_content": true
+  },
+  {
+    "word": "since",
+    "start": 48.16,
+    "end": 48.52,
+    "pos": "SCONJ",
+    "is_content": false
+  },
+  {
+    "word": "I,",
+    "start": 48.52,
+    "end": 48.86,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "it",
+    "start": 48.96,
+    "end": 49.2,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "hits",
+    "start": 49.2,
+    "end": 49.42,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "your",
+    "start": 49.42,
+    "end": 49.76,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "core.",
+    "start": 49.76,
+    "end": 50.02,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "This",
+    "start": 50.28,
+    "end": 50.54,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "is",
+    "start": 50.54,
+    "end": 50.76,
+    "pos": "AUX",
+    "is_content": false
+  },
+  {
+    "word": "the",
+    "start": 50.76,
+    "end": 51.04,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "song,",
+    "start": 51.04,
+    "end": 51.34,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "it's",
+    "start": 51.64,
+    "end": 51.88,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "something",
+    "start": 51.88,
+    "end": 52.18,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "more.",
+    "start": 52.18,
+    "end": 52.5,
+    "pos": "ADJ",
+    "is_content": true
+  },
+  {
+    "word": "Feel",
+    "start": 52.54,
+    "end": 52.9,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "it",
+    "start": 52.9,
+    "end": 53.2,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "in",
+    "start": 53.2,
+    "end": 53.34,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "your",
+    "start": 53.34,
+    "end": 53.68,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "gut,",
+    "start": 53.68,
+    "end": 54.02,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "right",
+    "start": 54.24,
+    "end": 54.46,
+    "pos": "ADV",
+    "is_content": true
+  },
+  {
+    "word": "where",
+    "start": 54.46,
+    "end": 54.62,
+    "pos": "SCONJ",
+    "is_content": false
+  },
+  {
+    "word": "it",
+    "start": 54.62,
+    "end": 55.0,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "lands.",
+    "start": 55.0,
+    "end": 55.16,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "Speak",
+    "start": 55.2,
+    "end": 55.44,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "it",
+    "start": 55.44,
+    "end": 55.58,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "school,",
+    "start": 55.58,
+    "end": 55.84,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "yours",
+    "start": 56.1,
+    "end": 56.14,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "no",
+    "start": 56.14,
+    "end": 56.38,
+    "pos": "ADV",
+    "is_content": true
+  },
+  {
+    "word": "much.",
+    "start": 56.38,
+    "end": 56.64,
+    "pos": "ADV",
+    "is_content": true
+  },
+  {
+    "word": "That's",
+    "start": 56.78,
+    "end": 57.32,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "the",
+    "start": 57.32,
+    "end": 57.52,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "plan.",
+    "start": 57.52,
+    "end": 57.76,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Yeah,",
+    "start": 57.84,
+    "end": 59.08,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "yeah,",
+    "start": 59.5,
+    "end": 60.26,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "yeah,",
+    "start": 60.4,
+    "end": 60.42,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "yeah,",
+    "start": 60.42,
+    "end": 60.44,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "yeah,",
+    "start": 60.46,
+    "end": 61.16,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "yeah,",
+    "start": 61.32,
+    "end": 61.34,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "yeah,",
+    "start": 61.34,
+    "end": 61.36,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "yeah,",
+    "start": 61.36,
+    "end": 61.52,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "yeah.",
+    "start": 61.52,
+    "end": 61.98,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "Electros",
+    "start": 62.92,
+    "end": 63.54,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "on",
+    "start": 63.54,
+    "end": 63.74,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "your",
+    "start": 63.74,
+    "end": 63.96,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "belly,",
+    "start": 63.96,
+    "end": 64.28,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "calibrate",
+    "start": 64.68,
+    "end": 65.14,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "it",
+    "start": 65.14,
+    "end": 65.34,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "right.",
+    "start": 65.34,
+    "end": 65.54,
+    "pos": "ADV",
+    "is_content": true
+  },
+  {
+    "word": "Two",
+    "start": 65.86,
+    "end": 66.16,
+    "pos": "NUM",
+    "is_content": false
+  },
+  {
+    "word": "seconds",
+    "start": 66.16,
+    "end": 66.48,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "flat",
+    "start": 66.48,
+    "end": 66.8,
+    "pos": "ADJ",
+    "is_content": true
+  },
+  {
+    "word": "and",
+    "start": 66.8,
+    "end": 67.02,
+    "pos": "CCONJ",
+    "is_content": false
+  },
+  {
+    "word": "we",
+    "start": 67.02,
+    "end": 67.24,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "locked",
+    "start": 67.24,
+    "end": 67.52,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "in",
+    "start": 67.52,
+    "end": 67.84,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "tight.",
+    "start": 67.84,
+    "end": 68.08,
+    "pos": "ADV",
+    "is_content": true
+  },
+  {
+    "word": "Prominence",
+    "start": 68.44,
+    "end": 68.98,
+    "pos": "ADJ",
+    "is_content": true
+  },
+  {
+    "word": "detection,",
+    "start": 68.98,
+    "end": 69.56,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "peaks",
+    "start": 69.82,
+    "end": 69.98,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "above",
+    "start": 69.98,
+    "end": 70.26,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "the",
+    "start": 70.26,
+    "end": 70.46,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "noise.",
+    "start": 70.46,
+    "end": 70.72,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Geometric",
+    "start": 71.06,
+    "end": 71.66,
+    "pos": "ADJ",
+    "is_content": true
+  },
+  {
+    "word": "mean,",
+    "start": 71.66,
+    "end": 71.98,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "that's",
+    "start": 72.2,
+    "end": 72.4,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "how",
+    "start": 72.4,
+    "end": 72.5,
+    "pos": "SCONJ",
+    "is_content": false
+  },
+  {
+    "word": "we",
+    "start": 72.5,
+    "end": 72.66,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "find",
+    "start": 72.66,
+    "end": 72.86,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "the",
+    "start": 72.86,
+    "end": 73.1,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "poise.",
+    "start": 73.1,
+    "end": 73.38,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "80",
+    "start": 73.6,
+    "end": 73.86,
+    "pos": "NUM",
+    "is_content": false
+  },
+  {
+    "word": "hertz",
+    "start": 73.86,
+    "end": 74.12,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "is",
+    "start": 74.12,
+    "end": 74.3,
+    "pos": "AUX",
+    "is_content": false
+  },
+  {
+    "word": "pulsing,",
+    "start": 74.3,
+    "end": 74.82,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "riding",
+    "start": 75.02,
+    "end": 75.2,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "on",
+    "start": 75.2,
+    "end": 75.42,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "my",
+    "start": 75.42,
+    "end": 75.66,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "flow.",
+    "start": 75.66,
+    "end": 75.84,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Every",
+    "start": 75.92,
+    "end": 76.18,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "syllable",
+    "start": 76.18,
+    "end": 76.62,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "you",
+    "start": 76.62,
+    "end": 76.88,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "hear,",
+    "start": 76.88,
+    "end": 77.12,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "your",
+    "start": 77.3,
+    "end": 77.48,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "muscles",
+    "start": 77.48,
+    "end": 77.74,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "gonna",
+    "start": 77.74,
+    "end": 78.04,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "know.",
+    "start": 78.04,
+    "end": 78.34,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "Now",
+    "start": 78.4,
+    "end": 78.6,
+    "pos": "ADV",
+    "is_content": true
+  },
+  {
+    "word": "vibration",
+    "start": 78.6,
+    "end": 79.08,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "on",
+    "start": 79.08,
+    "end": 79.3,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "the",
+    "start": 79.3,
+    "end": 79.5,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "skin,",
+    "start": 79.5,
+    "end": 79.72,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "we're",
+    "start": 79.98,
+    "end": 80.18,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "going",
+    "start": 80.18,
+    "end": 80.3,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "further",
+    "start": 80.3,
+    "end": 80.66,
+    "pos": "ADV",
+    "is_content": true
+  },
+  {
+    "word": "in.",
+    "start": 80.66,
+    "end": 81.0,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "Pencil-roll",
+    "start": 81.32,
+    "end": 81.84,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "sensation,",
+    "start": 81.84,
+    "end": 82.24,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "let",
+    "start": 82.34,
+    "end": 82.48,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "the",
+    "start": 82.48,
+    "end": 82.7,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "demo",
+    "start": 82.7,
+    "end": 82.94,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "begin.",
+    "start": 82.94,
+    "end": 83.38,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "Yeah.",
+    "start": 83.62,
+    "end": 84.12,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "Yeah.",
+    "start": 84.34,
+    "end": 84.88,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "Yeah.",
+    "start": 85.5,
+    "end": 85.88,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "You",
+    "start": 87.36,
+    "end": 87.5,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "ready?",
+    "start": 87.5,
+    "end": 87.76,
+    "pos": "ADJ",
+    "is_content": true
+  },
+  {
+    "word": "You",
+    "start": 91.82,
+    "end": 91.96,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "ready",
+    "start": 91.96,
+    "end": 92.16,
+    "pos": "ADJ",
+    "is_content": true
+  },
+  {
+    "word": "for",
+    "start": 92.16,
+    "end": 92.34,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "this?",
+    "start": 92.34,
+    "end": 92.56,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "Feel",
+    "start": 93.52,
+    "end": 94.0,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "it",
+    "start": 94.0,
+    "end": 94.34,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "in",
+    "start": 94.34,
+    "end": 94.6,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "your",
+    "start": 94.6,
+    "end": 94.94,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "gut.",
+    "start": 94.94,
+    "end": 95.2,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Yeah,",
+    "start": 95.3,
+    "end": 95.6,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "that's",
+    "start": 95.62,
+    "end": 95.96,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "my",
+    "start": 95.96,
+    "end": 96.16,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "boy.",
+    "start": 96.16,
+    "end": 96.42,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Every",
+    "start": 96.48,
+    "end": 96.82,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "word",
+    "start": 96.82,
+    "end": 97.16,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "I",
+    "start": 97.16,
+    "end": 97.48,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "drop,",
+    "start": 97.48,
+    "end": 97.8,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "you",
+    "start": 97.98,
+    "end": 98.16,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "got",
+    "start": 98.16,
+    "end": 98.42,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "no",
+    "start": 98.42,
+    "end": 98.74,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "choice.",
+    "start": 98.74,
+    "end": 99.02,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Prominence",
+    "start": 99.04,
+    "end": 99.88,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "inside,",
+    "start": 99.88,
+    "end": 100.36,
+    "pos": "ADV",
+    "is_content": true
+  },
+  {
+    "word": "it",
+    "start": 100.62,
+    "end": 100.82,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "hits",
+    "start": 100.82,
+    "end": 101.0,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "your",
+    "start": 101.0,
+    "end": 101.38,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "core.",
+    "start": 101.38,
+    "end": 101.6,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "This",
+    "start": 101.66,
+    "end": 101.9,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "ain't",
+    "start": 101.9,
+    "end": 102.12,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "just",
+    "start": 102.12,
+    "end": 102.38,
+    "pos": "ADV",
+    "is_content": true
+  },
+  {
+    "word": "a",
+    "start": 102.38,
+    "end": 102.66,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "song,",
+    "start": 102.66,
+    "end": 102.96,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "it's",
+    "start": 103.24,
+    "end": 103.52,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "something",
+    "start": 103.52,
+    "end": 103.8,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "more.",
+    "start": 103.8,
+    "end": 104.16,
+    "pos": "ADJ",
+    "is_content": true
+  },
+  {
+    "word": "Feel",
+    "start": 104.18,
+    "end": 104.52,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "it",
+    "start": 104.52,
+    "end": 104.8,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "in",
+    "start": 104.8,
+    "end": 104.96,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "your",
+    "start": 104.96,
+    "end": 105.24,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "gut,",
+    "start": 105.24,
+    "end": 105.6,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "where",
+    "start": 106.04,
+    "end": 106.34,
+    "pos": "SCONJ",
+    "is_content": false
+  },
+  {
+    "word": "it",
+    "start": 106.34,
+    "end": 106.56,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "lands.",
+    "start": 106.56,
+    "end": 106.76,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "Speak",
+    "start": 106.78,
+    "end": 107.08,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "it",
+    "start": 107.08,
+    "end": 107.34,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "to",
+    "start": 107.34,
+    "end": 107.46,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "your",
+    "start": 107.46,
+    "end": 107.74,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "school,",
+    "start": 107.74,
+    "end": 108.02,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "my",
+    "start": 108.22,
+    "end": 108.46,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "best",
+    "start": 108.46,
+    "end": 108.82,
+    "pos": "ADJ",
+    "is_content": true
+  },
+  {
+    "word": "of",
+    "start": 108.82,
+    "end": 109.18,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "plan.",
+    "start": 109.18,
+    "end": 109.42,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Whoa,",
+    "start": 109.56,
+    "end": 110.38,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "whoa,",
+    "start": 111.12,
+    "end": 111.8,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "whoa,",
+    "start": 112.0,
+    "end": 112.18,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "whoa,",
+    "start": 112.18,
+    "end": 112.86,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "whoa,",
+    "start": 113.6,
+    "end": 113.62,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "whoa,",
+    "start": 113.8,
+    "end": 113.9,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "whoa,",
+    "start": 113.9,
+    "end": 114.16,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "whoa,",
+    "start": 114.16,
+    "end": 114.24,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "whoa.",
+    "start": 114.24,
+    "end": 114.44,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Words",
+    "start": 114.86,
+    "end": 115.28,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "are",
+    "start": 115.28,
+    "end": 115.68,
+    "pos": "AUX",
+    "is_content": false
+  },
+  {
+    "word": "just",
+    "start": 115.68,
+    "end": 116.22,
+    "pos": "ADV",
+    "is_content": true
+  },
+  {
+    "word": "vibrations,",
+    "start": 116.22,
+    "end": 117.24,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "until",
+    "start": 118.18,
+    "end": 118.4,
+    "pos": "SCONJ",
+    "is_content": false
+  },
+  {
+    "word": "they",
+    "start": 118.4,
+    "end": 118.76,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "reach",
+    "start": 118.76,
+    "end": 119.1,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "your",
+    "start": 119.1,
+    "end": 119.42,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "belly.",
+    "start": 119.42,
+    "end": 119.7,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Signals",
+    "start": 120.04,
+    "end": 120.68,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "cross",
+    "start": 120.68,
+    "end": 121.32,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "the",
+    "start": 121.32,
+    "end": 122.04,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "boundary,",
+    "start": 122.04,
+    "end": 122.44,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "between",
+    "start": 123.14,
+    "end": 123.62,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "the",
+    "start": 123.62,
+    "end": 124.06,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "mind",
+    "start": 124.06,
+    "end": 124.32,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "and",
+    "start": 124.32,
+    "end": 124.64,
+    "pos": "CCONJ",
+    "is_content": false
+  },
+  {
+    "word": "body",
+    "start": 124.64,
+    "end": 124.92,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "augmented.",
+    "start": 124.92,
+    "end": 125.5,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "Human,",
+    "start": 127.42,
+    "end": 128.84,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "listening.",
+    "start": 129.9,
+    "end": 130.52,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Feel",
+    "start": 132.24,
+    "end": 132.74,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "it",
+    "start": 132.74,
+    "end": 133.12,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "in",
+    "start": 133.12,
+    "end": 133.34,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "your",
+    "start": 133.34,
+    "end": 133.66,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "gut.",
+    "start": 133.66,
+    "end": 133.96,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Yeah,",
+    "start": 134.02,
+    "end": 134.36,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "that's",
+    "start": 134.38,
+    "end": 134.66,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "my",
+    "start": 134.66,
+    "end": 134.86,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "voice.",
+    "start": 134.86,
+    "end": 135.18,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Every",
+    "start": 135.3,
+    "end": 135.54,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "word",
+    "start": 135.54,
+    "end": 135.92,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "I",
+    "start": 135.92,
+    "end": 136.24,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "drop,",
+    "start": 136.24,
+    "end": 136.52,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "you",
+    "start": 136.7,
+    "end": 136.86,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "got",
+    "start": 136.86,
+    "end": 137.14,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "no",
+    "start": 137.14,
+    "end": 137.48,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "choice.",
+    "start": 137.48,
+    "end": 137.82,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Yeah.",
+    "start": 137.82,
+    "end": 138.2,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "It's",
+    "start": 139.38,
+    "end": 139.78,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "your",
+    "start": 139.78,
+    "end": 140.06,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "core,",
+    "start": 140.06,
+    "end": 140.36,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "it's",
+    "start": 140.5,
+    "end": 140.68,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "ain't",
+    "start": 140.68,
+    "end": 140.9,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "just",
+    "start": 140.9,
+    "end": 141.12,
+    "pos": "ADV",
+    "is_content": true
+  },
+  {
+    "word": "a",
+    "start": 141.12,
+    "end": 141.34,
+    "pos": "DET",
+    "is_content": false
+  },
+  {
+    "word": "song,",
+    "start": 141.34,
+    "end": 141.7,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "it's",
+    "start": 141.9,
+    "end": 142.26,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "something",
+    "start": 142.26,
+    "end": 142.54,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "more.",
+    "start": 142.54,
+    "end": 142.9,
+    "pos": "ADJ",
+    "is_content": true
+  },
+  {
+    "word": "Can",
+    "start": 142.92,
+    "end": 143.16,
+    "pos": "AUX",
+    "is_content": false
+  },
+  {
+    "word": "you",
+    "start": 143.16,
+    "end": 143.52,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "feel",
+    "start": 143.52,
+    "end": 143.96,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "it",
+    "start": 143.96,
+    "end": 144.46,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "in",
+    "start": 144.46,
+    "end": 144.84,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "your",
+    "start": 144.84,
+    "end": 144.86,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "gut?",
+    "start": 144.86,
+    "end": 144.98,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Listen,",
+    "start": 146.84,
+    "end": 147.12,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "bro,",
+    "start": 147.4,
+    "end": 147.48,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "listen,",
+    "start": 147.62,
+    "end": 147.8,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "bro.",
+    "start": 147.8,
+    "end": 148.1,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Can",
+    "start": 148.14,
+    "end": 148.38,
+    "pos": "AUX",
+    "is_content": false
+  },
+  {
+    "word": "you",
+    "start": 148.38,
+    "end": 148.74,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "feel",
+    "start": 148.74,
+    "end": 149.18,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "it",
+    "start": 149.18,
+    "end": 149.88,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "in",
+    "start": 149.88,
+    "end": 149.9,
+    "pos": "ADP",
+    "is_content": false
+  },
+  {
+    "word": "your",
+    "start": 149.9,
+    "end": 149.92,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "gut?",
+    "start": 149.92,
+    "end": 150.16,
+    "pos": "NOUN",
+    "is_content": true
+  },
+  {
+    "word": "Feel",
+    "start": 151.8,
+    "end": 152.08,
+    "pos": "VERB",
+    "is_content": true
+  },
+  {
+    "word": "it.",
+    "start": 152.08,
+    "end": 152.36,
+    "pos": "PRON",
+    "is_content": false
+  },
+  {
+    "word": "Yeah.",
+    "start": 152.6,
+    "end": 153.06,
+    "pos": "INTJ",
+    "is_content": false
+  },
+  {
+    "word": "Yeah.",
+    "start": 153.88,
+    "end": 154.22,
+    "pos": "INTJ",
+    "is_content": false
+  }
+]

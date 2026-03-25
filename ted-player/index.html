@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prominence Player — TED Talks with Dynamic Subtitles</title>
+  <meta name="description" content="Watch TED talks with prominence-based dynamic subtitle sizing">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <!-- ═══ Header ═══ -->
+    <header class="header">
+      <div class="header__brand">
+        <span class="header__icon">🎬</span>
+        <h1>Prominence Player</h1>
+      </div>
+      <p class="header__sub">TED Talks with Prosody-Driven Dynamic Subtitles</p>
+    </header>
+
+    <!-- ═══ Clip Selector ═══ -->
+    <div class="clip-grid" id="clip_grid">
+      <!-- Populated by JS -->
+    </div>
+
+    <!-- ═══ Player ═══ -->
+    <div class="player-section" id="player_section">
+      <div class="player-wrapper" id="player_wrapper">
+        <video id="video" class="player-video" preload="auto"></video>
+        <div class="player-subtitle-overlay">
+          <div id="subtitle_text" class="player-subtitle-text"></div>
+        </div>
+        <button id="btn_fullscreen" class="player-fullscreen-btn" title="Fullscreen">⛶</button>
+      </div>
+
+      <!-- Transport -->
+      <div class="transport">
+        <div class="transport__btns">
+          <button class="transport__btn" id="btn_play" title="Play">▶</button>
+          <button class="transport__btn" id="btn_pause" title="Pause">⏸</button>
+          <button class="transport__btn" id="btn_stop" title="Stop">⏹</button>
+        </div>
+        <input type="range" class="transport__seek" id="seek_bar" min="0" max="1000" value="0">
+        <span class="transport__time" id="time_display">0:00 / 0:00</span>
+      </div>
+
+      <!-- Condition Tabs -->
+      <div class="condition-bar">
+        <span class="condition-label">Subtitle Mode:</span>
+        <div class="condition-tabs" id="condition_tabs">
+          <button class="condition-tab active" data-cond="prosody">Prosody (ACN)</button>
+          <button class="condition-tab" data-cond="normal">Normal</button>
+          <button class="condition-tab" data-cond="syntactic">Syntactic</button>
+          <button class="condition-tab" data-cond="syn_prosody">Syntax × Prosody</button>
+        </div>
+      </div>
+
+      <!-- Clip Info -->
+      <div class="clip-info" id="clip_info">
+        <span id="clip_speaker"></span>
+        <span id="clip_title"></span>
+        <span id="clip_meta"></span>
+      </div>
+    </div>
+
+    <!-- ═══ Legend ═══ -->
+    <div class="legend">
+      <div class="legend-item">
+        <span class="legend-word legend-small">small</span>
+        <span class="legend-desc">Low prominence</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-word legend-normal">normal</span>
+        <span class="legend-desc">Medium prominence</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-word legend-large">LARGE</span>
+        <span class="legend-desc">High prominence</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

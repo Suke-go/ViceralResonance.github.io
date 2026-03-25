@@ -1,0 +1,79 @@
+[
+  {
+    "name": "H1",
+    "speaker": "Ken Robinson",
+    "title": "Do Schools Kill Creativity?",
+    "year": 2006,
+    "note": "小学校エピソード、ユーモア・皮肉の交替、対比構文",
+    "group": "",
+    "duration": 90.0,
+    "words": 210,
+    "source": "H1.wav"
+  },
+  {
+    "name": "H2",
+    "speaker": "Brené Brown",
+    "title": "The Power of Vulnerability",
+    "year": 2010,
+    "note": "感情的語り、引用会話、自己言及強調",
+    "group": "",
+    "duration": 90.0,
+    "words": 256,
+    "source": "H2.wav"
+  },
+  {
+    "name": "H3",
+    "speaker": "Kelly McGonigal",
+    "title": "How to Make Stress Your Friend",
+    "year": 2013,
+    "note": "冒頭の告白、修辞的問いかけ、対比強勢",
+    "group": "",
+    "duration": 90.0,
+    "words": 208,
+    "source": "H3.wav"
+  },
+  {
+    "name": "L1",
+    "speaker": "Hans Rosling",
+    "title": "The Best Stats You've Ever Seen",
+    "year": 2006,
+    "note": "数値・国名の列挙、平坦",
+    "group": "",
+    "duration": 90.0,
+    "words": 269,
+    "source": "L1.wav"
+  },
+  {
+    "name": "L2",
+    "speaker": "David Christian",
+    "title": "History of Our World in 18 Minutes",
+    "year": 2011,
+    "note": "叙述的歴史説明",
+    "group": "",
+    "duration": 90.0,
+    "words": 196,
+    "source": "L2.wav"
+  },
+  {
+    "name": "L3",
+    "speaker": "Al Gore",
+    "title": "Averting the Climate Crisis",
+    "year": 2006,
+    "note": "政策説明調、グラフ解説",
+    "group": "",
+    "duration": 90.0,
+    "words": 193,
+    "source": "L3.wav"
+  },
+  {
+    "name": "R1",
+    "speaker": "Suno AI (Vocal)",
+    "title": "Feel It in Your Gut — Visceral Resonance Rap",
+    "year": 2026,
+    "note": "EMS×Prominence研究デモ用オリジナル楽曲、ラップ強調パターン",
+    "group": "",
+    "duration": 159.5,
+    "words": 345,
+    "source": "rap.mp3"
+  }
+]

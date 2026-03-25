@@ -1,0 +1,2072 @@
+[
+  {
+    "word": "Yeah.",
+    "start": 0.18,
+    "end": 0.6,
+    "confidence": 0.418
+  },
+  {
+    "word": "Yeah.",
+    "start": 3.64,
+    "end": 3.88,
+    "confidence": 0.991
+  },
+  {
+    "word": "La,",
+    "start": 6.4,
+    "end": 6.68,
+    "confidence": 0.257
+  },
+  {
+    "word": "na,",
+    "start": 6.78,
+    "end": 6.86,
+    "confidence": 0.504
+  },
+  {
+    "word": "na,",
+    "start": 6.88,
+    "end": 7.16,
+    "confidence": 0.977
+  },
+  {
+    "word": "na,",
+    "start": 7.16,
+    "end": 7.52,
+    "confidence": 0.82
+  },
+  {
+    "word": "na.",
+    "start": 7.52,
+    "end": 7.94,
+    "confidence": 0.485
+  },
+  {
+    "word": "Yeah.",
+    "start": 8.74,
+    "end": 9.26,
+    "confidence": 0.997
+  },
+  {
+    "word": "I",
+    "start": 11.46,
+    "end": 11.66,
+    "confidence": 0.992
+  },
+  {
+    "word": "step",
+    "start": 11.66,
+    "end": 11.9,
+    "confidence": 0.963
+  },
+  {
+    "word": "up",
+    "start": 11.9,
+    "end": 12.06,
+    "confidence": 0.912
+  },
+  {
+    "word": "to",
+    "start": 12.06,
+    "end": 12.2,
+    "confidence": 0.997
+  },
+  {
+    "word": "the",
+    "start": 12.2,
+    "end": 12.38,
+    "confidence": 0.995
+  },
+  {
+    "word": "mic,",
+    "start": 12.38,
+    "end": 12.66,
+    "confidence": 0.984
+  },
+  {
+    "word": "just",
+    "start": 12.72,
+    "end": 13.0,
+    "confidence": 0.899
+  },
+  {
+    "word": "me",
+    "start": 13.0,
+    "end": 13.22,
+    "confidence": 0.994
+  },
+  {
+    "word": "and",
+    "start": 13.22,
+    "end": 13.46,
+    "confidence": 0.804
+  },
+  {
+    "word": "the",
+    "start": 13.46,
+    "end": 13.62,
+    "confidence": 0.931
+  },
+  {
+    "word": "sound.",
+    "start": 13.62,
+    "end": 13.88,
+    "confidence": 0.998
+  },
+  {
+    "word": "Every",
+    "start": 14.32,
+    "end": 14.58,
+    "confidence": 0.971
+  },
+  {
+    "word": "word",
+    "start": 14.58,
+    "end": 14.74,
+    "confidence": 0.999
+  },
+  {
+    "word": "I",
+    "start": 14.74,
+    "end": 14.98,
+    "confidence": 0.996
+  },
+  {
+    "word": "speak",
+    "start": 14.98,
+    "end": 15.16,
+    "confidence": 0.999
+  },
+  {
+    "word": "is",
+    "start": 15.16,
+    "end": 15.3,
+    "confidence": 0.982
+  },
+  {
+    "word": "gonna",
+    "start": 15.3,
+    "end": 15.5,
+    "confidence": 0.85
+  },
+  {
+    "word": "move",
+    "start": 15.5,
+    "end": 15.92,
+    "confidence": 0.987
+  },
+  {
+    "word": "to",
+    "start": 15.92,
+    "end": 16.14,
+    "confidence": 0.634
+  },
+  {
+    "word": "ground.",
+    "start": 16.14,
+    "end": 16.4,
+    "confidence": 0.562
+  },
+  {
+    "word": "Not",
+    "start": 16.84,
+    "end": 17.06,
+    "confidence": 0.929
+  },
+  {
+    "word": "just",
+    "start": 17.06,
+    "end": 17.22,
+    "confidence": 0.998
+  },
+  {
+    "word": "in",
+    "start": 17.22,
+    "end": 17.34,
+    "confidence": 0.991
+  },
+  {
+    "word": "your",
+    "start": 17.34,
+    "end": 17.56,
+    "confidence": 0.973
+  },
+  {
+    "word": "ears,",
+    "start": 17.56,
+    "end": 17.78,
+    "confidence": 0.988
+  },
+  {
+    "word": "nah,",
+    "start": 17.94,
+    "end": 18.08,
+    "confidence": 0.819
+  },
+  {
+    "word": "deeper",
+    "start": 18.18,
+    "end": 18.42,
+    "confidence": 0.981
+  },
+  {
+    "word": "than",
+    "start": 18.42,
+    "end": 18.7,
+    "confidence": 0.984
+  },
+  {
+    "word": "that.",
+    "start": 18.7,
+    "end": 18.9,
+    "confidence": 0.998
+  },
+  {
+    "word": "I'm",
+    "start": 19.22,
+    "end": 19.48,
+    "confidence": 1.0
+  },
+  {
+    "word": "talking",
+    "start": 19.48,
+    "end": 19.68,
+    "confidence": 0.911
+  },
+  {
+    "word": "to",
+    "start": 19.68,
+    "end": 19.9,
+    "confidence": 0.997
+  },
+  {
+    "word": "your",
+    "start": 19.9,
+    "end": 20.12,
+    "confidence": 0.992
+  },
+  {
+    "word": "body,",
+    "start": 20.12,
+    "end": 20.34,
+    "confidence": 0.999
+  },
+  {
+    "word": "feel",
+    "start": 20.44,
+    "end": 20.58,
+    "confidence": 0.927
+  },
+  {
+    "word": "the",
+    "start": 20.58,
+    "end": 20.8,
+    "confidence": 0.985
+  },
+  {
+    "word": "impact.",
+    "start": 20.8,
+    "end": 21.36,
+    "confidence": 0.994
+  },
+  {
+    "word": "Science",
+    "start": 21.96,
+    "end": 22.3,
+    "confidence": 0.994
+  },
+  {
+    "word": "in",
+    "start": 22.3,
+    "end": 22.52,
+    "confidence": 0.994
+  },
+  {
+    "word": "my",
+    "start": 22.52,
+    "end": 22.7,
+    "confidence": 0.996
+  },
+  {
+    "word": "pocket,",
+    "start": 22.7,
+    "end": 23.08,
+    "confidence": 0.993
+  },
+  {
+    "word": "signaling",
+    "start": 23.44,
+    "end": 23.7,
+    "confidence": 0.501
+  },
+  {
+    "word": "my",
+    "start": 23.7,
+    "end": 24.0,
+    "confidence": 0.97
+  },
+  {
+    "word": "veins.",
+    "start": 24.0,
+    "end": 24.3,
+    "confidence": 0.985
+  },
+  {
+    "word": "Turning",
+    "start": 24.58,
+    "end": 24.88,
+    "confidence": 0.937
+  },
+  {
+    "word": "vocal",
+    "start": 24.88,
+    "end": 25.24,
+    "confidence": 0.996
+  },
+  {
+    "word": "waves",
+    "start": 25.24,
+    "end": 25.58,
+    "confidence": 0.994
+  },
+  {
+    "word": "to",
+    "start": 25.58,
+    "end": 25.82,
+    "confidence": 0.969
+  },
+  {
+    "word": "electrical",
+    "start": 25.82,
+    "end": 26.3,
+    "confidence": 0.997
+  },
+  {
+    "word": "frames.",
+    "start": 26.3,
+    "end": 26.76,
+    "confidence": 0.959
+  },
+  {
+    "word": "Six",
+    "start": 27.1,
+    "end": 27.36,
+    "confidence": 0.786
+  },
+  {
+    "word": "features",
+    "start": 27.36,
+    "end": 27.62,
+    "confidence": 0.988
+  },
+  {
+    "word": "extracted,",
+    "start": 27.62,
+    "end": 28.24,
+    "confidence": 0.988
+  },
+  {
+    "word": "using",
+    "start": 28.6,
+    "end": 28.92,
+    "confidence": 0.307
+  },
+  {
+    "word": "the",
+    "start": 28.92,
+    "end": 29.2,
+    "confidence": 0.888
+  },
+  {
+    "word": "one.",
+    "start": 29.2,
+    "end": 29.42,
+    "confidence": 0.984
+  },
+  {
+    "word": "The",
+    "start": 29.68,
+    "end": 29.88,
+    "confidence": 0.985
+  },
+  {
+    "word": "algorithm's",
+    "start": 29.88,
+    "end": 30.5,
+    "confidence": 0.839
+  },
+  {
+    "word": "ready",
+    "start": 30.5,
+    "end": 30.68,
+    "confidence": 0.999
+  },
+  {
+    "word": "and",
+    "start": 30.68,
+    "end": 30.9,
+    "confidence": 0.774
+  },
+  {
+    "word": "we've",
+    "start": 30.9,
+    "end": 31.14,
+    "confidence": 0.984
+  },
+  {
+    "word": "just",
+    "start": 31.14,
+    "end": 31.4,
+    "confidence": 0.999
+  },
+  {
+    "word": "begun.",
+    "start": 31.4,
+    "end": 31.76,
+    "confidence": 0.999
+  },
+  {
+    "word": "Can",
+    "start": 31.94,
+    "end": 32.2,
+    "confidence": 0.602
+  },
+  {
+    "word": "you",
+    "start": 32.2,
+    "end": 32.52,
+    "confidence": 0.994
+  },
+  {
+    "word": "feel",
+    "start": 32.52,
+    "end": 33.14,
+    "confidence": 0.963
+  },
+  {
+    "word": "it",
+    "start": 33.14,
+    "end": 33.46,
+    "confidence": 0.765
+  },
+  {
+    "word": "in",
+    "start": 33.46,
+    "end": 33.6,
+    "confidence": 0.569
+  },
+  {
+    "word": "your",
+    "start": 33.6,
+    "end": 34.04,
+    "confidence": 0.928
+  },
+  {
+    "word": "gut?",
+    "start": 34.04,
+    "end": 35.26,
+    "confidence": 0.695
+  },
+  {
+    "word": "Can",
+    "start": 37.12,
+    "end": 37.38,
+    "confidence": 0.868
+  },
+  {
+    "word": "you",
+    "start": 37.38,
+    "end": 37.48,
+    "confidence": 0.998
+  },
+  {
+    "word": "feel",
+    "start": 37.48,
+    "end": 37.94,
+    "confidence": 0.994
+  },
+  {
+    "word": "it",
+    "start": 37.94,
+    "end": 38.18,
+    "confidence": 0.991
+  },
+  {
+    "word": "in",
+    "start": 38.18,
+    "end": 38.36,
+    "confidence": 0.976
+  },
+  {
+    "word": "your",
+    "start": 38.36,
+    "end": 38.58,
+    "confidence": 0.975
+  },
+  {
+    "word": "gut?",
+    "start": 38.58,
+    "end": 39.78,
+    "confidence": 0.99
+  },
+  {
+    "word": "Come",
+    "start": 40.12,
+    "end": 40.78,
+    "confidence": 0.609
+  },
+  {
+    "word": "on.",
+    "start": 40.78,
+    "end": 41.02,
+    "confidence": 0.981
+  },
+  {
+    "word": "Feel",
+    "start": 41.94,
+    "end": 42.38,
+    "confidence": 0.97
+  },
+  {
+    "word": "it",
+    "start": 42.38,
+    "end": 42.78,
+    "confidence": 0.997
+  },
+  {
+    "word": "in",
+    "start": 42.78,
+    "end": 42.94,
+    "confidence": 0.995
+  },
+  {
+    "word": "your",
+    "start": 42.94,
+    "end": 43.32,
+    "confidence": 0.995
+  },
+  {
+    "word": "gut.",
+    "start": 43.32,
+    "end": 43.6,
+    "confidence": 0.993
+  },
+  {
+    "word": "Yeah,",
+    "start": 43.74,
+    "end": 44.02,
+    "confidence": 0.984
+  },
+  {
+    "word": "that's",
+    "start": 44.04,
+    "end": 44.36,
+    "confidence": 0.998
+  },
+  {
+    "word": "my",
+    "start": 44.36,
+    "end": 44.56,
+    "confidence": 0.991
+  },
+  {
+    "word": "boy.",
+    "start": 44.56,
+    "end": 44.8,
+    "confidence": 0.954
+  },
+  {
+    "word": "Every",
+    "start": 44.84,
+    "end": 45.2,
+    "confidence": 0.449
+  },
+  {
+    "word": "word",
+    "start": 45.2,
+    "end": 45.58,
+    "confidence": 0.999
+  },
+  {
+    "word": "I",
+    "start": 45.58,
+    "end": 45.96,
+    "confidence": 0.997
+  },
+  {
+    "word": "drop,",
+    "start": 45.96,
+    "end": 46.18,
+    "confidence": 0.872
+  },
+  {
+    "word": "you",
+    "start": 46.3,
+    "end": 46.56,
+    "confidence": 0.965
+  },
+  {
+    "word": "got",
+    "start": 46.56,
+    "end": 46.84,
+    "confidence": 0.876
+  },
+  {
+    "word": "no",
+    "start": 46.84,
+    "end": 47.1,
+    "confidence": 0.998
+  },
+  {
+    "word": "choice.",
+    "start": 47.1,
+    "end": 47.38,
+    "confidence": 1.0
+  },
+  {
+    "word": "Feel",
+    "start": 47.5,
+    "end": 47.76,
+    "confidence": 0.693
+  },
+  {
+    "word": "it",
+    "start": 47.76,
+    "end": 47.98,
+    "confidence": 0.917
+  },
+  {
+    "word": "in",
+    "start": 47.98,
+    "end": 48.16,
+    "confidence": 0.455
+  },
+  {
+    "word": "since",
+    "start": 48.16,
+    "end": 48.52,
+    "confidence": 0.25
+  },
+  {
+    "word": "I,",
+    "start": 48.52,
+    "end": 48.86,
+    "confidence": 0.505
+  },
+  {
+    "word": "it",
+    "start": 48.96,
+    "end": 49.2,
+    "confidence": 0.939
+  },
+  {
+    "word": "hits",
+    "start": 49.2,
+    "end": 49.42,
+    "confidence": 0.974
+  },
+  {
+    "word": "your",
+    "start": 49.42,
+    "end": 49.76,
+    "confidence": 0.99
+  },
+  {
+    "word": "core.",
+    "start": 49.76,
+    "end": 50.02,
+    "confidence": 0.975
+  },
+  {
+    "word": "This",
+    "start": 50.28,
+    "end": 50.54,
+    "confidence": 0.963
+  },
+  {
+    "word": "is",
+    "start": 50.54,
+    "end": 50.76,
+    "confidence": 0.892
+  },
+  {
+    "word": "the",
+    "start": 50.76,
+    "end": 51.04,
+    "confidence": 0.983
+  },
+  {
+    "word": "song,",
+    "start": 51.04,
+    "end": 51.34,
+    "confidence": 0.951
+  },
+  {
+    "word": "it's",
+    "start": 51.64,
+    "end": 51.88,
+    "confidence": 0.983
+  },
+  {
+    "word": "something",
+    "start": 51.88,
+    "end": 52.18,
+    "confidence": 0.982
+  },
+  {
+    "word": "more.",
+    "start": 52.18,
+    "end": 52.5,
+    "confidence": 0.999
+  },
+  {
+    "word": "Feel",
+    "start": 52.54,
+    "end": 52.9,
+    "confidence": 0.994
+  },
+  {
+    "word": "it",
+    "start": 52.9,
+    "end": 53.2,
+    "confidence": 0.997
+  },
+  {
+    "word": "in",
+    "start": 53.2,
+    "end": 53.34,
+    "confidence": 0.997
+  },
+  {
+    "word": "your",
+    "start": 53.34,
+    "end": 53.68,
+    "confidence": 0.996
+  },
+  {
+    "word": "gut,",
+    "start": 53.68,
+    "end": 54.02,
+    "confidence": 0.997
+  },
+  {
+    "word": "right",
+    "start": 54.24,
+    "end": 54.46,
+    "confidence": 0.92
+  },
+  {
+    "word": "where",
+    "start": 54.46,
+    "end": 54.62,
+    "confidence": 0.994
+  },
+  {
+    "word": "it",
+    "start": 54.62,
+    "end": 55.0,
+    "confidence": 0.994
+  },
+  {
+    "word": "lands.",
+    "start": 55.0,
+    "end": 55.16,
+    "confidence": 0.874
+  },
+  {
+    "word": "Speak",
+    "start": 55.2,
+    "end": 55.44,
+    "confidence": 0.425
+  },
+  {
+    "word": "it",
+    "start": 55.44,
+    "end": 55.58,
+    "confidence": 0.376
+  },
+  {
+    "word": "school,",
+    "start": 55.58,
+    "end": 55.84,
+    "confidence": 0.204
+  },
+  {
+    "word": "yours",
+    "start": 56.1,
+    "end": 56.14,
+    "confidence": 0.756
+  },
+  {
+    "word": "no",
+    "start": 56.14,
+    "end": 56.38,
+    "confidence": 0.328
+  },
+  {
+    "word": "much.",
+    "start": 56.38,
+    "end": 56.64,
+    "confidence": 0.667
+  },
+  {
+    "word": "That's",
+    "start": 56.78,
+    "end": 57.32,
+    "confidence": 0.857
+  },
+  {
+    "word": "the",
+    "start": 57.32,
+    "end": 57.52,
+    "confidence": 0.995
+  },
+  {
+    "word": "plan.",
+    "start": 57.52,
+    "end": 57.76,
+    "confidence": 0.994
+  },
+  {
+    "word": "Yeah,",
+    "start": 57.84,
+    "end": 59.08,
+    "confidence": 0.365
+  },
+  {
+    "word": "yeah,",
+    "start": 59.5,
+    "end": 60.26,
+    "confidence": 0.464
+  },
+  {
+    "word": "yeah,",
+    "start": 60.4,
+    "end": 60.42,
+    "confidence": 0.373
+  },
+  {
+    "word": "yeah,",
+    "start": 60.42,
+    "end": 60.44,
+    "confidence": 0.395
+  },
+  {
+    "word": "yeah,",
+    "start": 60.46,
+    "end": 61.16,
+    "confidence": 0.44
+  },
+  {
+    "word": "yeah,",
+    "start": 61.32,
+    "end": 61.34,
+    "confidence": 0.717
+  },
+  {
+    "word": "yeah,",
+    "start": 61.34,
+    "end": 61.36,
+    "confidence": 0.845
+  },
+  {
+    "word": "yeah,",
+    "start": 61.36,
+    "end": 61.52,
+    "confidence": 0.916
+  },
+  {
+    "word": "yeah.",
+    "start": 61.52,
+    "end": 61.98,
+    "confidence": 0.933
+  },
+  {
+    "word": "Electros",
+    "start": 62.92,
+    "end": 63.54,
+    "confidence": 0.733
+  },
+  {
+    "word": "on",
+    "start": 63.54,
+    "end": 63.74,
+    "confidence": 0.972
+  },
+  {
+    "word": "your",
+    "start": 63.74,
+    "end": 63.96,
+    "confidence": 0.982
+  },
+  {
+    "word": "belly,",
+    "start": 63.96,
+    "end": 64.28,
+    "confidence": 0.998
+  },
+  {
+    "word": "calibrate",
+    "start": 64.68,
+    "end": 65.14,
+    "confidence": 0.868
+  },
+  {
+    "word": "it",
+    "start": 65.14,
+    "end": 65.34,
+    "confidence": 0.99
+  },
+  {
+    "word": "right.",
+    "start": 65.34,
+    "end": 65.54,
+    "confidence": 0.989
+  },
+  {
+    "word": "Two",
+    "start": 65.86,
+    "end": 66.16,
+    "confidence": 0.978
+  },
+  {
+    "word": "seconds",
+    "start": 66.16,
+    "end": 66.48,
+    "confidence": 0.996
+  },
+  {
+    "word": "flat",
+    "start": 66.48,
+    "end": 66.8,
+    "confidence": 0.958
+  },
+  {
+    "word": "and",
+    "start": 66.8,
+    "end": 67.02,
+    "confidence": 0.917
+  },
+  {
+    "word": "we",
+    "start": 67.02,
+    "end": 67.24,
+    "confidence": 0.998
+  },
+  {
+    "word": "locked",
+    "start": 67.24,
+    "end": 67.52,
+    "confidence": 0.954
+  },
+  {
+    "word": "in",
+    "start": 67.52,
+    "end": 67.84,
+    "confidence": 0.965
+  },
+  {
+    "word": "tight.",
+    "start": 67.84,
+    "end": 68.08,
+    "confidence": 0.996
+  },
+  {
+    "word": "Prominence",
+    "start": 68.44,
+    "end": 68.98,
+    "confidence": 0.938
+  },
+  {
+    "word": "detection,",
+    "start": 68.98,
+    "end": 69.56,
+    "confidence": 0.978
+  },
+  {
+    "word": "peaks",
+    "start": 69.82,
+    "end": 69.98,
+    "confidence": 0.95
+  },
+  {
+    "word": "above",
+    "start": 69.98,
+    "end": 70.26,
+    "confidence": 0.934
+  },
+  {
+    "word": "the",
+    "start": 70.26,
+    "end": 70.46,
+    "confidence": 0.993
+  },
+  {
+    "word": "noise.",
+    "start": 70.46,
+    "end": 70.72,
+    "confidence": 0.996
+  },
+  {
+    "word": "Geometric",
+    "start": 71.06,
+    "end": 71.66,
+    "confidence": 0.691
+  },
+  {
+    "word": "mean,",
+    "start": 71.66,
+    "end": 71.98,
+    "confidence": 0.75
+  },
+  {
+    "word": "that's",
+    "start": 72.2,
+    "end": 72.4,
+    "confidence": 0.997
+  },
+  {
+    "word": "how",
+    "start": 72.4,
+    "end": 72.5,
+    "confidence": 0.997
+  },
+  {
+    "word": "we",
+    "start": 72.5,
+    "end": 72.66,
+    "confidence": 0.998
+  },
+  {
+    "word": "find",
+    "start": 72.66,
+    "end": 72.86,
+    "confidence": 0.953
+  },
+  {
+    "word": "the",
+    "start": 72.86,
+    "end": 73.1,
+    "confidence": 0.807
+  },
+  {
+    "word": "poise.",
+    "start": 73.1,
+    "end": 73.38,
+    "confidence": 0.937
+  },
+  {
+    "word": "80",
+    "start": 73.6,
+    "end": 73.86,
+    "confidence": 0.981
+  },
+  {
+    "word": "hertz",
+    "start": 73.86,
+    "end": 74.12,
+    "confidence": 0.689
+  },
+  {
+    "word": "is",
+    "start": 74.12,
+    "end": 74.3,
+    "confidence": 0.964
+  },
+  {
+    "word": "pulsing,",
+    "start": 74.3,
+    "end": 74.82,
+    "confidence": 0.972
+  },
+  {
+    "word": "riding",
+    "start": 75.02,
+    "end": 75.2,
+    "confidence": 0.919
+  },
+  {
+    "word": "on",
+    "start": 75.2,
+    "end": 75.42,
+    "confidence": 0.996
+  },
+  {
+    "word": "my",
+    "start": 75.42,
+    "end": 75.66,
+    "confidence": 0.974
+  },
+  {
+    "word": "flow.",
+    "start": 75.66,
+    "end": 75.84,
+    "confidence": 0.995
+  },
+  {
+    "word": "Every",
+    "start": 75.92,
+    "end": 76.18,
+    "confidence": 0.998
+  },
+  {
+    "word": "syllable",
+    "start": 76.18,
+    "end": 76.62,
+    "confidence": 0.999
+  },
+  {
+    "word": "you",
+    "start": 76.62,
+    "end": 76.88,
+    "confidence": 0.995
+  },
+  {
+    "word": "hear,",
+    "start": 76.88,
+    "end": 77.12,
+    "confidence": 0.989
+  },
+  {
+    "word": "your",
+    "start": 77.3,
+    "end": 77.48,
+    "confidence": 0.922
+  },
+  {
+    "word": "muscles",
+    "start": 77.48,
+    "end": 77.74,
+    "confidence": 0.875
+  },
+  {
+    "word": "gonna",
+    "start": 77.74,
+    "end": 78.04,
+    "confidence": 0.981
+  },
+  {
+    "word": "know.",
+    "start": 78.04,
+    "end": 78.34,
+    "confidence": 0.995
+  },
+  {
+    "word": "Now",
+    "start": 78.4,
+    "end": 78.6,
+    "confidence": 0.551
+  },
+  {
+    "word": "vibration",
+    "start": 78.6,
+    "end": 79.08,
+    "confidence": 0.863
+  },
+  {
+    "word": "on",
+    "start": 79.08,
+    "end": 79.3,
+    "confidence": 0.996
+  },
+  {
+    "word": "the",
+    "start": 79.3,
+    "end": 79.5,
+    "confidence": 0.982
+  },
+  {
+    "word": "skin,",
+    "start": 79.5,
+    "end": 79.72,
+    "confidence": 0.997
+  },
+  {
+    "word": "we're",
+    "start": 79.98,
+    "end": 80.18,
+    "confidence": 0.986
+  },
+  {
+    "word": "going",
+    "start": 80.18,
+    "end": 80.3,
+    "confidence": 0.861
+  },
+  {
+    "word": "further",
+    "start": 80.3,
+    "end": 80.66,
+    "confidence": 0.985
+  },
+  {
+    "word": "in.",
+    "start": 80.66,
+    "end": 81.0,
+    "confidence": 0.99
+  },
+  {
+    "word": "Pencil-roll",
+    "start": 81.32,
+    "end": 81.84,
+    "confidence": 0.411
+  },
+  {
+    "word": "sensation,",
+    "start": 81.84,
+    "end": 82.24,
+    "confidence": 0.994
+  },
+  {
+    "word": "let",
+    "start": 82.34,
+    "end": 82.48,
+    "confidence": 0.996
+  },
+  {
+    "word": "the",
+    "start": 82.48,
+    "end": 82.7,
+    "confidence": 0.992
+  },
+  {
+    "word": "demo",
+    "start": 82.7,
+    "end": 82.94,
+    "confidence": 0.998
+  },
+  {
+    "word": "begin.",
+    "start": 82.94,
+    "end": 83.38,
+    "confidence": 0.992
+  },
+  {
+    "word": "Yeah.",
+    "start": 83.62,
+    "end": 84.12,
+    "confidence": 0.419
+  },
+  {
+    "word": "Yeah.",
+    "start": 84.34,
+    "end": 84.88,
+    "confidence": 0.413
+  },
+  {
+    "word": "Yeah.",
+    "start": 85.5,
+    "end": 85.88,
+    "confidence": 0.273
+  },
+  {
+    "word": "You",
+    "start": 87.36,
+    "end": 87.5,
+    "confidence": 0.98
+  },
+  {
+    "word": "ready?",
+    "start": 87.5,
+    "end": 87.76,
+    "confidence": 0.971
+  },
+  {
+    "word": "You",
+    "start": 91.82,
+    "end": 91.96,
+    "confidence": 0.995
+  },
+  {
+    "word": "ready",
+    "start": 91.96,
+    "end": 92.16,
+    "confidence": 0.965
+  },
+  {
+    "word": "for",
+    "start": 92.16,
+    "end": 92.34,
+    "confidence": 0.978
+  },
+  {
+    "word": "this?",
+    "start": 92.34,
+    "end": 92.56,
+    "confidence": 0.998
+  },
+  {
+    "word": "Feel",
+    "start": 93.52,
+    "end": 94.0,
+    "confidence": 0.975
+  },
+  {
+    "word": "it",
+    "start": 94.0,
+    "end": 94.34,
+    "confidence": 0.993
+  },
+  {
+    "word": "in",
+    "start": 94.34,
+    "end": 94.6,
+    "confidence": 0.995
+  },
+  {
+    "word": "your",
+    "start": 94.6,
+    "end": 94.94,
+    "confidence": 0.995
+  },
+  {
+    "word": "gut.",
+    "start": 94.94,
+    "end": 95.2,
+    "confidence": 0.997
+  },
+  {
+    "word": "Yeah,",
+    "start": 95.3,
+    "end": 95.6,
+    "confidence": 0.996
+  },
+  {
+    "word": "that's",
+    "start": 95.62,
+    "end": 95.96,
+    "confidence": 0.999
+  },
+  {
+    "word": "my",
+    "start": 95.96,
+    "end": 96.16,
+    "confidence": 0.998
+  },
+  {
+    "word": "boy.",
+    "start": 96.16,
+    "end": 96.42,
+    "confidence": 0.655
+  },
+  {
+    "word": "Every",
+    "start": 96.48,
+    "end": 96.82,
+    "confidence": 0.986
+  },
+  {
+    "word": "word",
+    "start": 96.82,
+    "end": 97.16,
+    "confidence": 0.998
+  },
+  {
+    "word": "I",
+    "start": 97.16,
+    "end": 97.48,
+    "confidence": 0.996
+  },
+  {
+    "word": "drop,",
+    "start": 97.48,
+    "end": 97.8,
+    "confidence": 0.994
+  },
+  {
+    "word": "you",
+    "start": 97.98,
+    "end": 98.16,
+    "confidence": 0.991
+  },
+  {
+    "word": "got",
+    "start": 98.16,
+    "end": 98.42,
+    "confidence": 0.985
+  },
+  {
+    "word": "no",
+    "start": 98.42,
+    "end": 98.74,
+    "confidence": 0.996
+  },
+  {
+    "word": "choice.",
+    "start": 98.74,
+    "end": 99.02,
+    "confidence": 0.999
+  },
+  {
+    "word": "Prominence",
+    "start": 99.04,
+    "end": 99.88,
+    "confidence": 0.976
+  },
+  {
+    "word": "inside,",
+    "start": 99.88,
+    "end": 100.36,
+    "confidence": 0.825
+  },
+  {
+    "word": "it",
+    "start": 100.62,
+    "end": 100.82,
+    "confidence": 0.979
+  },
+  {
+    "word": "hits",
+    "start": 100.82,
+    "end": 101.0,
+    "confidence": 0.981
+  },
+  {
+    "word": "your",
+    "start": 101.0,
+    "end": 101.38,
+    "confidence": 0.993
+  },
+  {
+    "word": "core.",
+    "start": 101.38,
+    "end": 101.6,
+    "confidence": 0.995
+  },
+  {
+    "word": "This",
+    "start": 101.66,
+    "end": 101.9,
+    "confidence": 0.991
+  },
+  {
+    "word": "ain't",
+    "start": 101.9,
+    "end": 102.12,
+    "confidence": 0.971
+  },
+  {
+    "word": "just",
+    "start": 102.12,
+    "end": 102.38,
+    "confidence": 0.997
+  },
+  {
+    "word": "a",
+    "start": 102.38,
+    "end": 102.66,
+    "confidence": 0.799
+  },
+  {
+    "word": "song,",
+    "start": 102.66,
+    "end": 102.96,
+    "confidence": 0.996
+  },
+  {
+    "word": "it's",
+    "start": 103.24,
+    "end": 103.52,
+    "confidence": 0.99
+  },
+  {
+    "word": "something",
+    "start": 103.52,
+    "end": 103.8,
+    "confidence": 0.998
+  },
+  {
+    "word": "more.",
+    "start": 103.8,
+    "end": 104.16,
+    "confidence": 0.999
+  },
+  {
+    "word": "Feel",
+    "start": 104.18,
+    "end": 104.52,
+    "confidence": 0.991
+  },
+  {
+    "word": "it",
+    "start": 104.52,
+    "end": 104.8,
+    "confidence": 0.994
+  },
+  {
+    "word": "in",
+    "start": 104.8,
+    "end": 104.96,
+    "confidence": 0.995
+  },
+  {
+    "word": "your",
+    "start": 104.96,
+    "end": 105.24,
+    "confidence": 0.996
+  },
+  {
+    "word": "gut,",
+    "start": 105.24,
+    "end": 105.6,
+    "confidence": 0.996
+  },
+  {
+    "word": "where",
+    "start": 106.04,
+    "end": 106.34,
+    "confidence": 0.722
+  },
+  {
+    "word": "it",
+    "start": 106.34,
+    "end": 106.56,
+    "confidence": 0.996
+  },
+  {
+    "word": "lands.",
+    "start": 106.56,
+    "end": 106.76,
+    "confidence": 0.974
+  },
+  {
+    "word": "Speak",
+    "start": 106.78,
+    "end": 107.08,
+    "confidence": 0.831
+  },
+  {
+    "word": "it",
+    "start": 107.08,
+    "end": 107.34,
+    "confidence": 0.984
+  },
+  {
+    "word": "to",
+    "start": 107.34,
+    "end": 107.46,
+    "confidence": 0.538
+  },
+  {
+    "word": "your",
+    "start": 107.46,
+    "end": 107.74,
+    "confidence": 0.47
+  },
+  {
+    "word": "school,",
+    "start": 107.74,
+    "end": 108.02,
+    "confidence": 0.68
+  },
+  {
+    "word": "my",
+    "start": 108.22,
+    "end": 108.46,
+    "confidence": 0.356
+  },
+  {
+    "word": "best",
+    "start": 108.46,
+    "end": 108.82,
+    "confidence": 0.839
+  },
+  {
+    "word": "of",
+    "start": 108.82,
+    "end": 109.18,
+    "confidence": 0.524
+  },
+  {
+    "word": "plan.",
+    "start": 109.18,
+    "end": 109.42,
+    "confidence": 0.711
+  },
+  {
+    "word": "Whoa,",
+    "start": 109.56,
+    "end": 110.38,
+    "confidence": 0.371
+  },
+  {
+    "word": "whoa,",
+    "start": 111.12,
+    "end": 111.8,
+    "confidence": 0.784
+  },
+  {
+    "word": "whoa,",
+    "start": 112.0,
+    "end": 112.18,
+    "confidence": 0.926
+  },
+  {
+    "word": "whoa,",
+    "start": 112.18,
+    "end": 112.86,
+    "confidence": 0.922
+  },
+  {
+    "word": "whoa,",
+    "start": 113.6,
+    "end": 113.62,
+    "confidence": 0.945
+  },
+  {
+    "word": "whoa,",
+    "start": 113.8,
+    "end": 113.9,
+    "confidence": 0.958
+  },
+  {
+    "word": "whoa,",
+    "start": 113.9,
+    "end": 114.16,
+    "confidence": 0.961
+  },
+  {
+    "word": "whoa,",
+    "start": 114.16,
+    "end": 114.24,
+    "confidence": 0.969
+  },
+  {
+    "word": "whoa.",
+    "start": 114.24,
+    "end": 114.44,
+    "confidence": 0.97
+  },
+  {
+    "word": "Words",
+    "start": 114.86,
+    "end": 115.28,
+    "confidence": 0.994
+  },
+  {
+    "word": "are",
+    "start": 115.28,
+    "end": 115.68,
+    "confidence": 0.985
+  },
+  {
+    "word": "just",
+    "start": 115.68,
+    "end": 116.22,
+    "confidence": 0.998
+  },
+  {
+    "word": "vibrations,",
+    "start": 116.22,
+    "end": 117.24,
+    "confidence": 0.896
+  },
+  {
+    "word": "until",
+    "start": 118.18,
+    "end": 118.4,
+    "confidence": 0.819
+  },
+  {
+    "word": "they",
+    "start": 118.4,
+    "end": 118.76,
+    "confidence": 0.998
+  },
+  {
+    "word": "reach",
+    "start": 118.76,
+    "end": 119.1,
+    "confidence": 0.996
+  },
+  {
+    "word": "your",
+    "start": 119.1,
+    "end": 119.42,
+    "confidence": 0.993
+  },
+  {
+    "word": "belly.",
+    "start": 119.42,
+    "end": 119.7,
+    "confidence": 0.998
+  },
+  {
+    "word": "Signals",
+    "start": 120.04,
+    "end": 120.68,
+    "confidence": 0.992
+  },
+  {
+    "word": "cross",
+    "start": 120.68,
+    "end": 121.32,
+    "confidence": 0.925
+  },
+  {
+    "word": "the",
+    "start": 121.32,
+    "end": 122.04,
+    "confidence": 0.999
+  },
+  {
+    "word": "boundary,",
+    "start": 122.04,
+    "end": 122.44,
+    "confidence": 0.969
+  },
+  {
+    "word": "between",
+    "start": 123.14,
+    "end": 123.62,
+    "confidence": 0.992
+  },
+  {
+    "word": "the",
+    "start": 123.62,
+    "end": 124.06,
+    "confidence": 0.995
+  },
+  {
+    "word": "mind",
+    "start": 124.06,
+    "end": 124.32,
+    "confidence": 0.994
+  },
+  {
+    "word": "and",
+    "start": 124.32,
+    "end": 124.64,
+    "confidence": 0.997
+  },
+  {
+    "word": "body",
+    "start": 124.64,
+    "end": 124.92,
+    "confidence": 0.986
+  },
+  {
+    "word": "augmented.",
+    "start": 124.92,
+    "end": 125.5,
+    "confidence": 0.421
+  },
+  {
+    "word": "Human,",
+    "start": 127.42,
+    "end": 128.84,
+    "confidence": 0.736
+  },
+  {
+    "word": "listening.",
+    "start": 129.9,
+    "end": 130.52,
+    "confidence": 0.574
+  },
+  {
+    "word": "Feel",
+    "start": 132.24,
+    "end": 132.74,
+    "confidence": 0.991
+  },
+  {
+    "word": "it",
+    "start": 132.74,
+    "end": 133.12,
+    "confidence": 0.995
+  },
+  {
+    "word": "in",
+    "start": 133.12,
+    "end": 133.34,
+    "confidence": 0.996
+  },
+  {
+    "word": "your",
+    "start": 133.34,
+    "end": 133.66,
+    "confidence": 0.997
+  },
+  {
+    "word": "gut.",
+    "start": 133.66,
+    "end": 133.96,
+    "confidence": 0.986
+  },
+  {
+    "word": "Yeah,",
+    "start": 134.02,
+    "end": 134.36,
+    "confidence": 0.99
+  },
+  {
+    "word": "that's",
+    "start": 134.38,
+    "end": 134.66,
+    "confidence": 0.999
+  },
+  {
+    "word": "my",
+    "start": 134.66,
+    "end": 134.86,
+    "confidence": 0.999
+  },
+  {
+    "word": "voice.",
+    "start": 134.86,
+    "end": 135.18,
+    "confidence": 0.683
+  },
+  {
+    "word": "Every",
+    "start": 135.3,
+    "end": 135.54,
+    "confidence": 0.993
+  },
+  {
+    "word": "word",
+    "start": 135.54,
+    "end": 135.92,
+    "confidence": 0.999
+  },
+  {
+    "word": "I",
+    "start": 135.92,
+    "end": 136.24,
+    "confidence": 0.997
+  },
+  {
+    "word": "drop,",
+    "start": 136.24,
+    "end": 136.52,
+    "confidence": 0.998
+  },
+  {
+    "word": "you",
+    "start": 136.7,
+    "end": 136.86,
+    "confidence": 0.995
+  },
+  {
+    "word": "got",
+    "start": 136.86,
+    "end": 137.14,
+    "confidence": 0.981
+  },
+  {
+    "word": "no",
+    "start": 137.14,
+    "end": 137.48,
+    "confidence": 0.998
+  },
+  {
+    "word": "choice.",
+    "start": 137.48,
+    "end": 137.82,
+    "confidence": 0.999
+  },
+  {
+    "word": "Yeah.",
+    "start": 137.82,
+    "end": 138.2,
+    "confidence": 0.843
+  },
+  {
+    "word": "It's",
+    "start": 139.38,
+    "end": 139.78,
+    "confidence": 0.681
+  },
+  {
+    "word": "your",
+    "start": 139.78,
+    "end": 140.06,
+    "confidence": 0.971
+  },
+  {
+    "word": "core,",
+    "start": 140.06,
+    "end": 140.36,
+    "confidence": 0.832
+  },
+  {
+    "word": "it's",
+    "start": 140.5,
+    "end": 140.68,
+    "confidence": 0.656
+  },
+  {
+    "word": "ain't",
+    "start": 140.68,
+    "end": 140.9,
+    "confidence": 0.8
+  },
+  {
+    "word": "just",
+    "start": 140.9,
+    "end": 141.12,
+    "confidence": 0.984
+  },
+  {
+    "word": "a",
+    "start": 141.12,
+    "end": 141.34,
+    "confidence": 0.825
+  },
+  {
+    "word": "song,",
+    "start": 141.34,
+    "end": 141.7,
+    "confidence": 0.996
+  },
+  {
+    "word": "it's",
+    "start": 141.9,
+    "end": 142.26,
+    "confidence": 0.755
+  },
+  {
+    "word": "something",
+    "start": 142.26,
+    "end": 142.54,
+    "confidence": 0.997
+  },
+  {
+    "word": "more.",
+    "start": 142.54,
+    "end": 142.9,
+    "confidence": 0.999
+  },
+  {
+    "word": "Can",
+    "start": 142.92,
+    "end": 143.16,
+    "confidence": 0.978
+  },
+  {
+    "word": "you",
+    "start": 143.16,
+    "end": 143.52,
+    "confidence": 0.998
+  },
+  {
+    "word": "feel",
+    "start": 143.52,
+    "end": 143.96,
+    "confidence": 0.976
+  },
+  {
+    "word": "it",
+    "start": 143.96,
+    "end": 144.46,
+    "confidence": 0.816
+  },
+  {
+    "word": "in",
+    "start": 144.46,
+    "end": 144.84,
+    "confidence": 0.52
+  },
+  {
+    "word": "your",
+    "start": 144.84,
+    "end": 144.86,
+    "confidence": 0.752
+  },
+  {
+    "word": "gut?",
+    "start": 144.86,
+    "end": 144.98,
+    "confidence": 0.975
+  },
+  {
+    "word": "Listen,",
+    "start": 146.84,
+    "end": 147.12,
+    "confidence": 0.651
+  },
+  {
+    "word": "bro,",
+    "start": 147.4,
+    "end": 147.48,
+    "confidence": 0.613
+  },
+  {
+    "word": "listen,",
+    "start": 147.62,
+    "end": 147.8,
+    "confidence": 0.802
+  },
+  {
+    "word": "bro.",
+    "start": 147.8,
+    "end": 148.1,
+    "confidence": 0.996
+  },
+  {
+    "word": "Can",
+    "start": 148.14,
+    "end": 148.38,
+    "confidence": 0.974
+  },
+  {
+    "word": "you",
+    "start": 148.38,
+    "end": 148.74,
+    "confidence": 0.999
+  },
+  {
+    "word": "feel",
+    "start": 148.74,
+    "end": 149.18,
+    "confidence": 0.995
+  },
+  {
+    "word": "it",
+    "start": 149.18,
+    "end": 149.88,
+    "confidence": 0.99
+  },
+  {
+    "word": "in",
+    "start": 149.88,
+    "end": 149.9,
+    "confidence": 0.979
+  },
+  {
+    "word": "your",
+    "start": 149.9,
+    "end": 149.92,
+    "confidence": 0.996
+  },
+  {
+    "word": "gut?",
+    "start": 149.92,
+    "end": 150.16,
+    "confidence": 0.998
+  },
+  {
+    "word": "Feel",
+    "start": 151.8,
+    "end": 152.08,
+    "confidence": 0.951
+  },
+  {
+    "word": "it.",
+    "start": 152.08,
+    "end": 152.36,
+    "confidence": 0.526
+  },
+  {
+    "word": "Yeah.",
+    "start": 152.6,
+    "end": 153.06,
+    "confidence": 0.956
+  },
+  {
+    "word": "Yeah.",
+    "start": 153.88,
+    "end": 154.22,
+    "confidence": 0.882
+  }
+]
