@@ -153,6 +153,44 @@
          Playback Mode
          ═══════════════════════════════════════════════ -->
     <div class="mode-section mode-section--hidden" id="modePlaybackSection">
+      <div class="caption-browser">
+        <div class="section-header">
+          <h2 class="section-title">Caption Viewer</h2>
+          <button class="btn-small" id="captionReloadBtn">Reload Clips</button>
+        </div>
+        <div class="port-grid">
+          <div class="port-card">
+            <div class="port-card__header">
+              <span class="port-card__icon">CC</span>
+              <span class="port-card__title">TED Clip</span>
+            </div>
+            <div class="select-group"><select id="captionClipSelect"></select></div>
+            <div class="port-card__hint">free selection from TED caption data</div>
+          </div>
+          <div class="port-card">
+            <div class="port-card__header">
+              <span class="port-card__icon">Aa</span>
+              <span class="port-card__title">Subtitle Style</span>
+            </div>
+            <div class="select-group">
+              <select id="captionConditionSelect">
+                <option value="normal">Normal</option>
+                <option value="syntactic">Syntactic</option>
+                <option value="prosody">Prosody</option>
+                <option value="syn_prosody">Syntax + Prosody</option>
+              </select>
+            </div>
+            <div class="port-card__hint">no Latin-square assignment</div>
+          </div>
+        </div>
+        <div class="caption-viewer">
+          <div class="caption-video-wrap">
+            <video id="captionVideo" playsinline controls controlsList="nodownload noplaybackrate"></video>
+            <div class="caption-overlay" id="captionOverlay"></div>
+          </div>
+          <div class="caption-meta" id="captionMeta">Select a clip</div>
+        </div>
+      </div>
 
       <!-- Port Selection -->
       <div class="section-header">

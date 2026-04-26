@@ -380,6 +380,9 @@ class EMSProminenceApp {
     this.wooferLiveStream = null;
     this.wooferLiveCtx = null;
     this.wooferLiveNodes = null;
+    this.captionClips = [];
+    this.captionWords = [];
+    this.captionAnimFrame = null;
 
     this.els = {};
   }
@@ -840,6 +843,12 @@ class EMSProminenceApp {
       seekSlider: $('seekSlider'),
       transportTime: $('transportTime'),
       statusPlayback: $('statusPlayback'),
+      captionReloadBtn: $('captionReloadBtn'),
+      captionClipSelect: $('captionClipSelect'),
+      captionConditionSelect: $('captionConditionSelect'),
+      captionVideo: $('captionVideo'),
+      captionOverlay: $('captionOverlay'),
+      captionMeta: $('captionMeta'),
       // Ab Woofer mode
       modeWooferBtn: $('modeWooferBtn'),
       modeWooferSection: $('modeWooferSection'),
@@ -1015,8 +1024,10 @@ class EMSProminenceApp {
     } else if (mode === 'woofer') {
       if (this.isRunning) this.togglePower();
       if (this._audioL && !this._audioL.paused) this._playbackPause();
+      if (this.els.captionVideo && !this.els.captionVideo.paused) this.els.captionVideo.pause();
     } else {
       if (this._audioL && !this._audioL.paused) this._playbackPause();
+      if (this.els.captionVideo && !this.els.captionVideo.paused) this.els.captionVideo.pause();
       this._wooferPause();
       this._stopWooferCapture();
     }
@@ -1037,6 +1048,8 @@ class EMSProminenceApp {
 
     this._refreshDevices();
     this._loadMediaLibrary();
+    this._bindCaptionControls();
+    this._loadCaptionClips();
 
     this.els.refreshDevicesBtn?.addEventListener('click', () => this._refreshDevices());
 
@@ -1103,9 +1116,148 @@ class EMSProminenceApp {
     try {
       if (this._audioL.setSinkId) await this._audioL.setSinkId(audioId);
       if (this._audioR.setSinkId) await this._audioR.setSinkId(emsId);
+      if (this.els.captionVideo?.setSinkId) await this.els.captionVideo.setSinkId(audioId);
     } catch (err) {
       console.warn('[Playback] setSinkId failed:', err);
     }
+  }
+
+  _bindCaptionControls() {
+    this.els.captionReloadBtn?.addEventListener('click', () => this._loadCaptionClips());
+    this.els.captionClipSelect?.addEventListener('change', () => this._loadCaptionClip(this.els.captionClipSelect.value));
+    this.els.captionConditionSelect?.addEventListener('change', () => this._setCaptionCondition(this.els.captionConditionSelect.value));
+    this.els.captionVideo?.addEventListener('play', () => this._startCaptionSync());
+    this.els.captionVideo?.addEventListener('pause', () => this._stopCaptionSync());
+    this.els.captionVideo?.addEventListener('ended', () => {
+      this._stopCaptionSync();
+      if (this.els.captionOverlay) this.els.captionOverlay.innerHTML = '';
+    });
+  }
+
+  async _loadCaptionClips() {
+    const sel = this.els.captionClipSelect;
+    if (!sel) return;
+
+    try {
+      const res = await fetch('./ted-player/demo_data/manifest.json');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const manifest = await res.json();
+      this.captionClips = Array.isArray(manifest) ? manifest : [];
+
+      const hasPractice = await fetch('./ted-player/demo_data/practice/subtitle.json', { method: 'HEAD' })
+        .then(r => r.ok).catch(() => false);
+      if (hasPractice && !this.captionClips.some(c => c.name === 'practice')) {
+        this.captionClips.push({
+          name: 'practice',
+          speaker: 'Practice',
+          title: 'Practice Clip',
+          year: '',
+          duration: 0,
+          words: 0
+        });
+      }
+
+      sel.innerHTML = '';
+      this.captionClips
+        .filter(c => c.name !== 'R1')
+        .forEach(c => {
+          const opt = document.createElement('option');
+          opt.value = c.name;
+          opt.textContent = `${c.name} - ${c.speaker || 'Unknown'} / ${c.title || ''}`;
+          sel.appendChild(opt);
+        });
+
+      if (sel.options.length) await this._loadCaptionClip(sel.value);
+    } catch (err) {
+      console.warn('[Caption] Failed to load clip manifest:', err);
+      if (this.els.captionMeta) this.els.captionMeta.textContent = 'Caption data could not be loaded.';
+    }
+  }
+
+  async _loadCaptionClip(name) {
+    if (!name || !this.els.captionVideo) return;
+    this._stopCaptionSync();
+    this.els.captionVideo.pause();
+    this.els.captionOverlay.innerHTML = '';
+
+    const clip = this.captionClips.find(c => c.name === name) || { name };
+    const base = `./ted-player/demo_data/${name}`;
+
+    try {
+      const sub = await fetch(`${base}/subtitle.json`).then(r => r.json());
+      this.captionSubtitleData = sub.conditions || {};
+
+      const condition = this.els.captionConditionSelect?.value || 'normal';
+      this.captionWords = this.captionSubtitleData[condition] || this.captionSubtitleData.normal || [];
+
+      this.els.captionVideo.src = `${base}/video.mp4`;
+      this.els.captionVideo.load();
+      await this._applyPorts();
+
+      if (this.els.captionMeta) {
+        const duration = clip.duration ? `${clip.duration}s` : '';
+        this.els.captionMeta.textContent = `${clip.name} / ${clip.speaker || 'Unknown'} / ${clip.title || ''} ${duration}`;
+      }
+      if (this.els.statusPlayback) this.els.statusPlayback.textContent = 'Caption clip ready';
+    } catch (err) {
+      console.warn('[Caption] Failed to load clip:', err);
+      if (this.els.captionMeta) this.els.captionMeta.textContent = `Failed to load ${name}`;
+      if (this.els.statusPlayback) this.els.statusPlayback.textContent = 'Caption load failed';
+    }
+  }
+
+  _setCaptionCondition(condition) {
+    if (!this.captionSubtitleData) return;
+    this.captionWords = this.captionSubtitleData[condition] || this.captionSubtitleData.normal || [];
+    this._renderCaptionAt(this.els.captionVideo?.currentTime || 0);
+    if (this.els.statusPlayback) this.els.statusPlayback.textContent = `Subtitle: ${condition}`;
+  }
+
+  _startCaptionSync() {
+    this._stopCaptionSync();
+    const tick = () => {
+      this._renderCaptionAt(this.els.captionVideo?.currentTime || 0);
+      if (this.els.captionVideo && !this.els.captionVideo.paused) {
+        this.captionAnimFrame = requestAnimationFrame(tick);
+      }
+    };
+    this.captionAnimFrame = requestAnimationFrame(tick);
+  }
+
+  _stopCaptionSync() {
+    if (this.captionAnimFrame) cancelAnimationFrame(this.captionAnimFrame);
+    this.captionAnimFrame = null;
+  }
+
+  _renderCaptionAt(time) {
+    const overlay = this.els.captionOverlay;
+    if (!overlay) return;
+
+    const lookback = 2.0;
+    const visible = (this.captionWords || []).filter(w => w.start >= time - lookback && w.start <= time + 0.2);
+    if (!visible.length) {
+      overlay.innerHTML = '';
+      return;
+    }
+
+    overlay.innerHTML = visible.map(w => {
+      const active = time >= w.start && time <= w.end;
+      const past = time > w.end;
+      const opacity = past ? Math.max(0.45, 1 - ((time - w.end) / lookback) * 0.35) : 1;
+      const fontSize = Math.max(14, Math.min(38, Number(w.font_size || 18))) * 1.25;
+      const weight = Number(w.font_weight || 400);
+      return `<span class="caption-word${active ? ' active' : ''}${past ? ' past' : ''}" style="font-size:${fontSize}px;font-weight:${weight};opacity:${opacity}">${this._escapeHtml(w.text || '')} </span>`;
+    }).join('');
+  }
+
+  _escapeHtml(text) {
+    return String(text).replace(/[&<>"']/g, ch => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;'
+    }[ch]));
   }
 
   async _loadMediaLibrary() {
