@@ -1190,7 +1190,7 @@ class EMSProminenceApp {
       const condition = this.els.captionConditionSelect?.value || 'normal';
       this.captionWords = this.captionSubtitleData[condition] || this.captionSubtitleData.normal || [];
 
-      this.els.captionVideo.src = `${base}/video.mp4`;
+      this.els.captionVideo.src = this._captionVideoUrl(name);
       this.els.captionVideo.load();
       await this._applyPorts();
 
@@ -1211,6 +1211,13 @@ class EMSProminenceApp {
     this.captionWords = this.captionSubtitleData[condition] || this.captionSubtitleData.normal || [];
     this._renderCaptionAt(this.els.captionVideo?.currentTime || 0);
     if (this.els.statusPlayback) this.els.statusPlayback.textContent = `Subtitle: ${condition}`;
+  }
+
+  _captionVideoUrl(name) {
+    const localUrl = `./ted-player/demo_data/${name}/video.mp4`;
+    const isLocal = ['localhost', '127.0.0.1', ''].includes(window.location.hostname);
+    if (isLocal) return localUrl;
+    return `https://media.githubusercontent.com/media/Suke-go/ViceralResonance.github.io/main/ted-player/demo_data/${name}/video.mp4`;
   }
 
   _startCaptionSync() {
