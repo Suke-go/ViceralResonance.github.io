@@ -875,6 +875,79 @@ input[type="range"]::-webkit-slider-thumb:hover {
 
 /* ═══ Event Log ═══ */
 
+.playback-player__controls { gap: 8px; }
+
+/* Ab Woofer */
+.woofer-meter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.woofer-meter {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px;
+}
+
+.woofer-meter__label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 8px;
+}
+
+.woofer-meter__track {
+  height: 18px;
+  background: var(--bg-input);
+  border: 1px solid var(--border-subtle);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.woofer-meter__bar {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-blue));
+  transition: width 0.08s linear;
+}
+
+.woofer-meter__bar--usb {
+  background: linear-gradient(90deg, var(--accent-amber), var(--accent-red));
+}
+
+.woofer-live-card {
+  margin-bottom: 12px;
+}
+
+.woofer-live-actions {
+  justify-content: flex-start;
+  margin: 0 0 12px;
+}
+
+.woofer-live-hint {
+  margin: 0 0 10px;
+}
+
+.woofer-live-preview {
+  width: 100%;
+  max-height: 260px;
+  display: none;
+  background: var(--bg-input);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  object-fit: contain;
+}
+
+.woofer-live-preview.active {
+  display: block;
+}
+
 .event-log-section { margin-bottom: 20px; }
 
 .event-log {
@@ -961,6 +1034,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
   .acn-info { flex-direction: row; gap: 16px; }
   .controls-grid { grid-template-columns: 1fr; }
   .port-grid { grid-template-columns: 1fr; }
+  .woofer-meter-grid { grid-template-columns: 1fr; }
   .power-btn { width: 64px; height: 64px; font-size: 26px; }
   .status-bar { gap: 12px; font-size: 10px; flex-wrap: wrap; }
 }

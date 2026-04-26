@@ -45,6 +45,9 @@
       <button class="mode-tab" id="modePlaybackBtn" data-mode="playback">
         <span>🎬</span> 視聴モード
       </button>
+      <button class="mode-tab" id="modeWooferBtn" data-mode="woofer">
+        <span>WF</span> Ab Woofer
+      </button>
     </div>
 
     <!-- ═══ Status Chip ═══ -->
@@ -204,6 +207,95 @@
         </div>
       </div>
     </div><!-- end playback -->
+
+    <div class="mode-section mode-section--hidden" id="modeWooferSection">
+      <div class="section-header">
+        <h2 class="section-title">Ab Woofer / Music Split</h2>
+        <button class="btn-small" id="refreshWooferDevicesBtn">Refresh Devices</button>
+      </div>
+      <div class="port-grid">
+        <div class="port-card">
+          <div class="port-card__header">
+            <span class="port-card__icon">A</span>
+            <span class="port-card__title">Audio Port</span>
+          </div>
+          <div class="select-group"><select id="wooferAudioPortSelect"><option value="default">Default</option></select></div>
+          <div class="port-card__hint">high-passed music / headphones / speakers</div>
+        </div>
+        <div class="port-card">
+          <div class="port-card__header">
+            <span class="port-card__icon">USB</span>
+            <span class="port-card__title">USB Bass Port</span>
+          </div>
+          <div class="select-group"><select id="wooferUsbPortSelect"><option value="default">Default</option></select></div>
+          <div class="port-card__hint">low-passed bass / audio-driven EMS adapter</div>
+        </div>
+      </div>
+
+      <div class="playback-card woofer-live-card">
+        <div class="section-header">
+          <h2 class="section-title">Live Tab Capture</h2>
+          <span class="transport-time" id="wooferLiveState">Idle</span>
+        </div>
+        <div class="playback-player__controls woofer-live-actions">
+          <button class="btn-small" id="wooferCaptureBtn">Capture Live Tab</button>
+          <button class="btn-small" id="wooferStopCaptureBtn">Stop Live</button>
+        </div>
+        <div class="port-card__hint woofer-live-hint">If the source tab is still audible, mute that tab and watch the preview here.</div>
+        <video class="woofer-live-preview" id="wooferLivePreview" autoplay muted playsinline></video>
+      </div>
+
+      <div class="playback-card">
+        <div class="playback-drop-zone playback-drop-zone--small" id="wooferDropZone">
+          <div class="playback-drop-zone__text">Drop an audio file here / click to choose music</div>
+          <input type="file" id="wooferFileInput" accept="audio/*,.wav,.mp3,.m4a,.aac,.ogg,.flac" style="display:none">
+        </div>
+        <div class="playback-player" id="wooferPlayer" style="display:none">
+          <div class="playback-player__name" id="wooferFileName">--</div>
+          <div class="playback-transport">
+            <button class="transport-btn" id="wooferPlayBtn">▶</button>
+            <button class="transport-btn" id="wooferPauseBtn">Ⅱ</button>
+            <button class="transport-btn" id="wooferStopBtn">■</button>
+            <input type="range" class="seek-slider" id="wooferSeekSlider" min="0" max="100" value="0" step="0.1">
+            <span class="transport-time" id="wooferTransportTime">0:00 / 0:00</span>
+          </div>
+          <div class="playback-player__controls">
+            <button class="btn-small" id="wooferApplyBtn">Apply Split</button>
+            <button class="btn-small" id="wooferClearBtn">Clear</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls-grid" style="margin-top:12px">
+        <div class="control-card">
+          <div class="control-card__header">
+            <span class="control-card__title">Crossover</span>
+            <span class="control-card__value" id="wooferCutoffValue">120 Hz</span>
+          </div>
+          <input type="range" id="wooferCutoffSlider" min="40" max="250" value="120" step="5">
+          <div class="slider-labels"><span>40 Hz</span><span>250 Hz</span></div>
+        </div>
+        <div class="control-card">
+          <div class="control-card__header">
+            <span class="control-card__title">USB Bass Gain</span>
+            <span class="control-card__value amplitude-value" id="wooferGainValue">25%</span>
+          </div>
+          <input type="range" class="amplitude-slider" id="wooferGainSlider" min="0" max="300" value="25" step="5">
+          <div class="slider-labels"><span>0% Safe</span><span>150%</span><span>300%</span></div>
+        </div>
+      </div>
+
+      <div class="woofer-meter-grid">
+        <div class="woofer-meter">
+          <span class="woofer-meter__label">Audio band</span>
+          <div class="woofer-meter__track"><div class="woofer-meter__bar" id="wooferAudioMeter"></div></div>
+        </div>
+        <div class="woofer-meter">
+          <span class="woofer-meter__label">USB bass band</span>
+          <div class="woofer-meter__track"><div class="woofer-meter__bar woofer-meter__bar--usb" id="wooferUsbMeter"></div></div>
+        </div>
+      </div>
+    </div><!-- end woofer -->
 
     <!-- ═══ Shared EMS Controls ═══ -->
     <div class="controls-grid">

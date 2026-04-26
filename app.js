@@ -371,6 +371,16 @@ class EMSProminenceApp {
     this.waveformData = new Float32Array(128);
     this.animFrameId = null;
 
+    this.wooferCutoffHz = 120;
+    this.wooferGain = 25;
+    this.wooferSourceBuffer = null;
+    this.wooferAudioUrl = null;
+    this.wooferUsbUrl = null;
+    this.wooferMeterFrame = null;
+    this.wooferLiveStream = null;
+    this.wooferLiveCtx = null;
+    this.wooferLiveNodes = null;
+
     this.els = {};
   }
 
@@ -830,6 +840,33 @@ class EMSProminenceApp {
       seekSlider: $('seekSlider'),
       transportTime: $('transportTime'),
       statusPlayback: $('statusPlayback'),
+      // Ab Woofer mode
+      modeWooferBtn: $('modeWooferBtn'),
+      modeWooferSection: $('modeWooferSection'),
+      refreshWooferDevicesBtn: $('refreshWooferDevicesBtn'),
+      wooferAudioPortSelect: $('wooferAudioPortSelect'),
+      wooferUsbPortSelect: $('wooferUsbPortSelect'),
+      wooferCaptureBtn: $('wooferCaptureBtn'),
+      wooferStopCaptureBtn: $('wooferStopCaptureBtn'),
+      wooferLivePreview: $('wooferLivePreview'),
+      wooferLiveState: $('wooferLiveState'),
+      wooferDropZone: $('wooferDropZone'),
+      wooferFileInput: $('wooferFileInput'),
+      wooferPlayer: $('wooferPlayer'),
+      wooferFileName: $('wooferFileName'),
+      wooferPlayBtn: $('wooferPlayBtn'),
+      wooferPauseBtn: $('wooferPauseBtn'),
+      wooferStopBtn: $('wooferStopBtn'),
+      wooferSeekSlider: $('wooferSeekSlider'),
+      wooferTransportTime: $('wooferTransportTime'),
+      wooferApplyBtn: $('wooferApplyBtn'),
+      wooferClearBtn: $('wooferClearBtn'),
+      wooferCutoffSlider: $('wooferCutoffSlider'),
+      wooferCutoffValue: $('wooferCutoffValue'),
+      wooferGainSlider: $('wooferGainSlider'),
+      wooferGainValue: $('wooferGainValue'),
+      wooferAudioMeter: $('wooferAudioMeter'),
+      wooferUsbMeter: $('wooferUsbMeter'),
       // Mode tabs
       modeRealtimeBtn: $('modeRealtimeBtn'),
       modePlaybackBtn: $('modePlaybackBtn'),
@@ -849,6 +886,7 @@ class EMSProminenceApp {
     this._currentMode = 'realtime';
     this.els.modeRealtimeBtn?.addEventListener('click', () => this._switchMode('realtime'));
     this.els.modePlaybackBtn?.addEventListener('click', () => this._switchMode('playback'));
+    this.els.modeWooferBtn?.addEventListener('click', () => this._switchMode('woofer'));
 
     // Warning dismiss
     this.els.dismissWarning?.addEventListener('click', () => {
@@ -921,12 +959,21 @@ class EMSProminenceApp {
 
     // ── Playback mode ──
     this._bindPlaybackControls();
+    this._bindWooferControls();
 
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
-      if (e.code === 'Space' && e.target.tagName !== 'SELECT') {
+      if (e.code === 'Space' && !['SELECT', 'INPUT', 'BUTTON'].includes(e.target.tagName)) {
         e.preventDefault();
-        this.togglePower();
+        if (this._currentMode === 'realtime') {
+          this.togglePower();
+        } else if (this._currentMode === 'playback') {
+          if (this._audioL && !this._audioL.paused) this._playbackPause();
+          else this._playbackPlay();
+        } else if (this._currentMode === 'woofer') {
+          if (this._wooferAudio && !this._wooferAudio.paused) this._wooferPause();
+          else this._wooferPlay();
+        }
       }
       if (e.code === 'Escape') {
         if (this.isRunning) {
@@ -956,13 +1003,22 @@ class EMSProminenceApp {
     this._currentMode = mode;
     this.els.modeRealtimeBtn?.classList.toggle('mode-tab--active', mode === 'realtime');
     this.els.modePlaybackBtn?.classList.toggle('mode-tab--active', mode === 'playback');
+    this.els.modeWooferBtn?.classList.toggle('mode-tab--active', mode === 'woofer');
     this.els.modeRealtimeSection?.classList.toggle('mode-section--hidden', mode !== 'realtime');
     this.els.modePlaybackSection?.classList.toggle('mode-section--hidden', mode !== 'playback');
+    this.els.modeWooferSection?.classList.toggle('mode-section--hidden', mode !== 'woofer');
 
     if (mode === 'playback') {
       if (this.isRunning) this.togglePower();
+      this._wooferPause();
+      this._stopWooferCapture();
+    } else if (mode === 'woofer') {
+      if (this.isRunning) this.togglePower();
+      if (this._audioL && !this._audioL.paused) this._playbackPause();
     } else {
       if (this._audioL && !this._audioL.paused) this._playbackPause();
+      this._wooferPause();
+      this._stopWooferCapture();
     }
   }
 
@@ -1034,6 +1090,8 @@ class EMSProminenceApp {
 
       if (this.els.audioPortSelect) fillSelect(this.els.audioPortSelect);
       if (this.els.emsPortSelect) fillSelect(this.els.emsPortSelect);
+      if (this.els.wooferAudioPortSelect) fillSelect(this.els.wooferAudioPortSelect);
+      if (this.els.wooferUsbPortSelect) fillSelect(this.els.wooferUsbPortSelect);
     } catch (err) {
       console.warn('[Playback] Could not enumerate devices:', err);
     }
@@ -1190,29 +1248,39 @@ class EMSProminenceApp {
     }
   }
 
-  _createMonoWavBlob(channelData, sr) {
-    const n = channelData.length;
-    const buffer = new ArrayBuffer(44 + n * 2);
+  _createWavBlob(channels, sr) {
+    const safeChannels = channels.filter(Boolean);
+    const channelCount = Math.max(1, safeChannels.length);
+    const n = safeChannels[0].length;
+    const bytesPerSample = 2;
+    const blockAlign = channelCount * bytesPerSample;
+    const buffer = new ArrayBuffer(44 + n * blockAlign);
     const view = new DataView(buffer);
     const writeStr = (off, str) => { for (let i = 0; i < str.length; i++) view.setUint8(off + i, str.charCodeAt(i)); };
     writeStr(0, 'RIFF');
-    view.setUint32(4, 36 + n * 2, true);
+    view.setUint32(4, 36 + n * blockAlign, true);
     writeStr(8, 'WAVE');
     writeStr(12, 'fmt ');
     view.setUint32(16, 16, true);
     view.setUint16(20, 1, true);
-    view.setUint16(22, 1, true);
+    view.setUint16(22, channelCount, true);
     view.setUint32(24, sr, true);
-    view.setUint32(28, sr * 2, true);
-    view.setUint16(32, 2, true);
+    view.setUint32(28, sr * blockAlign, true);
+    view.setUint16(32, blockAlign, true);
     view.setUint16(34, 16, true);
     writeStr(36, 'data');
-    view.setUint32(40, n * 2, true);
+    view.setUint32(40, n * blockAlign, true);
     for (let i = 0; i < n; i++) {
-      const s = Math.max(-1, Math.min(1, channelData[i]));
-      view.setInt16(44 + i * 2, s * 32767, true);
+      for (let ch = 0; ch < channelCount; ch++) {
+        const s = Math.max(-1, Math.min(1, safeChannels[ch][i] || 0));
+        view.setInt16(44 + (i * channelCount + ch) * 2, s * 32767, true);
+      }
     }
     return new Blob([buffer], { type: 'audio/wav' });
+  }
+
+  _createMonoWavBlob(channelData, sr) {
+    return this._createWavBlob([channelData], sr);
   }
 
   _playbackPlay() {
@@ -1278,6 +1346,470 @@ class EMSProminenceApp {
     this.els.dropZone.style.display = '';
     this.els.playbackPlayer.style.display = 'none';
     this.els.playbackFileInput.value = '';
+    if (this.els.statusPlayback) this.els.statusPlayback.textContent = '--';
+  }
+
+  // Ab Woofer Mode
+
+  _bindWooferControls() {
+    const dz = this.els.wooferDropZone;
+    const fi = this.els.wooferFileInput;
+    if (!dz || !fi) return;
+
+    this._wooferAudio = new Audio();
+    this._wooferUsb = new Audio();
+    this._wooferDuration = 0;
+    this._wooferReady = false;
+
+    this.els.refreshWooferDevicesBtn?.addEventListener('click', () => this._refreshDevices());
+
+    dz.addEventListener('click', () => fi.click());
+    dz.addEventListener('dragover', (e) => { e.preventDefault(); dz.classList.add('dragover'); });
+    dz.addEventListener('dragleave', () => dz.classList.remove('dragover'));
+    dz.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dz.classList.remove('dragover');
+      if (e.dataTransfer.files[0]) this._loadWooferFile(e.dataTransfer.files[0]);
+    });
+
+    fi.addEventListener('change', (e) => {
+      if (e.target.files[0]) this._loadWooferFile(e.target.files[0]);
+    });
+
+    this.els.wooferPlayBtn?.addEventListener('click', () => this._wooferPlay());
+    this.els.wooferPauseBtn?.addEventListener('click', () => this._wooferPause());
+    this.els.wooferStopBtn?.addEventListener('click', () => this._wooferStop());
+    this.els.wooferClearBtn?.addEventListener('click', () => this._clearWoofer());
+    this.els.wooferApplyBtn?.addEventListener('click', () => this._buildWooferSplit(false));
+    this.els.wooferCaptureBtn?.addEventListener('click', () => this._startWooferCapture());
+    this.els.wooferStopCaptureBtn?.addEventListener('click', () => this._stopWooferCapture());
+    this.els.wooferAudioPortSelect?.addEventListener('change', () => this._applyWooferPorts());
+    this.els.wooferUsbPortSelect?.addEventListener('change', () => this._applyWooferPorts());
+
+    this.els.wooferSeekSlider?.addEventListener('input', (e) => {
+      const t = (parseFloat(e.target.value) / 100) * this._wooferDuration;
+      this._wooferAudio.currentTime = t;
+      this._wooferUsb.currentTime = t;
+    });
+
+    this.els.wooferCutoffSlider?.addEventListener('input', (e) => {
+      this.wooferCutoffHz = parseInt(e.target.value);
+      this.els.wooferCutoffValue.textContent = `${this.wooferCutoffHz} Hz`;
+      this._setLiveWooferParams();
+      if (this._wooferReady && this.els.statusPlayback) this.els.statusPlayback.textContent = 'Split changed';
+    });
+
+    this.els.wooferGainSlider?.addEventListener('input', (e) => {
+      this.wooferGain = parseInt(e.target.value);
+      this.els.wooferGainValue.textContent = `${this.wooferGain}%`;
+      this._setLiveWooferParams();
+      if (this.els.statusPlayback) {
+        if (this.wooferGain <= 0) {
+          this.els.statusPlayback.textContent = 'USB bass muted';
+        } else if (this._wooferReady) {
+          this.els.statusPlayback.textContent = 'Split changed';
+        } else if (this.wooferLiveStream) {
+          this.els.statusPlayback.textContent = 'Live woofer active';
+        }
+      }
+    });
+  }
+
+  async _applyWooferPorts() {
+    const audioId = this.els.wooferAudioPortSelect?.value || 'default';
+    const usbId = this.els.wooferUsbPortSelect?.value || 'default';
+    try {
+      if (this._wooferAudio?.setSinkId) await this._wooferAudio.setSinkId(audioId);
+      if (this._wooferUsb?.setSinkId) await this._wooferUsb.setSinkId(usbId);
+      if (this._wooferLiveAudio?.setSinkId) await this._wooferLiveAudio.setSinkId(audioId);
+      if (this._wooferLiveUsb?.setSinkId) await this._wooferLiveUsb.setSinkId(usbId);
+    } catch (err) {
+      console.warn('[Woofer] setSinkId failed:', err);
+    }
+  }
+
+  async _startWooferCapture() {
+    if (!navigator.mediaDevices?.getDisplayMedia) {
+      alert('Live capture is not supported in this browser.');
+      return;
+    }
+
+    this._wooferPause();
+    await this._stopWooferCapture();
+    if (this.els.statusPlayback) this.els.statusPlayback.textContent = 'Choose a live tab...';
+    if (this.els.wooferLiveState) this.els.wooferLiveState.textContent = 'Waiting';
+
+    try {
+      const stream = await this._requestWooferDisplayStream();
+
+      if (!stream.getAudioTracks().length) {
+        stream.getTracks().forEach(t => t.stop());
+        alert('No tab audio was shared. Choose a browser tab and enable audio sharing.');
+        if (this.els.statusPlayback) this.els.statusPlayback.textContent = 'No live audio';
+        if (this.els.wooferLiveState) this.els.wooferLiveState.textContent = 'No audio';
+        return;
+      }
+
+      this.wooferLiveStream = stream;
+      this.wooferLiveCtx = new (window.AudioContext || window.webkitAudioContext)({ latencyHint: 'interactive' });
+      if (this.wooferLiveCtx.state === 'suspended') await this.wooferLiveCtx.resume();
+
+      const source = this.wooferLiveCtx.createMediaStreamSource(stream);
+      const highFilter = this.wooferLiveCtx.createBiquadFilter();
+      const lowFilter = this.wooferLiveCtx.createBiquadFilter();
+      const lowGain = this.wooferLiveCtx.createGain();
+      const audioDest = this.wooferLiveCtx.createMediaStreamDestination();
+      const usbDest = this.wooferLiveCtx.createMediaStreamDestination();
+
+      highFilter.type = 'highpass';
+      lowFilter.type = 'lowpass';
+      highFilter.Q.value = 0.707;
+      lowFilter.Q.value = 0.707;
+      this.wooferLiveNodes = { highFilter, lowFilter, lowGain };
+      this._setLiveWooferParams();
+
+      source.connect(highFilter).connect(audioDest);
+      source.connect(lowFilter).connect(lowGain).connect(usbDest);
+
+      this._wooferLiveAudio = new Audio();
+      this._wooferLiveUsb = new Audio();
+      this._wooferLiveAudio.srcObject = audioDest.stream;
+      this._wooferLiveUsb.srcObject = usbDest.stream;
+      this._wooferLiveAudio.autoplay = true;
+      this._wooferLiveUsb.autoplay = true;
+      this._wooferLiveAudio.muted = false;
+      this._wooferLiveUsb.muted = false;
+      this._wooferLiveAudio.volume = 1;
+      this._wooferLiveUsb.volume = 1;
+      await this._applyWooferPorts();
+
+      if (this.els.wooferLivePreview) {
+        this.els.wooferLivePreview.srcObject = stream;
+        this.els.wooferLivePreview.classList.add('active');
+      }
+
+      stream.getTracks().forEach(track => {
+        track.addEventListener('ended', () => this._stopWooferCapture(), { once: true });
+      });
+
+      await Promise.all([
+        this._wooferLiveAudio.play(),
+        this._wooferLiveUsb.play(),
+      ]);
+
+      if (this.els.statusPlayback) {
+        this.els.statusPlayback.textContent = this.wooferGain > 0 ? 'Live woofer active' : 'USB bass muted';
+      }
+      if (this.els.wooferLiveState) this.els.wooferLiveState.textContent = 'Live / mute source tab if doubled';
+    } catch (err) {
+      console.warn('[Woofer] Live capture failed:', err);
+      await this._stopWooferCapture();
+      if (err.name !== 'NotAllowedError') alert('Live capture failed.');
+      if (this.els.statusPlayback) this.els.statusPlayback.textContent = 'Live capture stopped';
+    }
+  }
+
+  async _requestWooferDisplayStream() {
+    const baseAudio = {
+      echoCancellation: false,
+      noiseSuppression: false,
+      autoGainControl: false,
+    };
+    try {
+      return await navigator.mediaDevices.getDisplayMedia({
+        video: true,
+        audio: {
+          ...baseAudio,
+          suppressLocalAudioPlayback: true,
+        },
+      });
+    } catch (err) {
+      if (err.name === 'TypeError' || err.name === 'OverconstrainedError') {
+        return navigator.mediaDevices.getDisplayMedia({
+          video: true,
+          audio: baseAudio,
+        });
+      }
+      throw err;
+    }
+  }
+
+  _setLiveWooferParams() {
+    if (!this.wooferLiveNodes || !this.wooferLiveCtx) return;
+    const now = this.wooferLiveCtx.currentTime;
+    this.wooferLiveNodes.highFilter.frequency.setTargetAtTime(this.wooferCutoffHz, now, 0.015);
+    this.wooferLiveNodes.lowFilter.frequency.setTargetAtTime(this.wooferCutoffHz, now, 0.015);
+    this.wooferLiveNodes.lowGain.gain.setTargetAtTime(this.wooferGain / 100, now, 0.015);
+  }
+
+  async _stopWooferCapture() {
+    if (this._wooferLiveAudio) {
+      this._wooferLiveAudio.pause();
+      this._wooferLiveAudio.srcObject = null;
+    }
+    if (this._wooferLiveUsb) {
+      this._wooferLiveUsb.pause();
+      this._wooferLiveUsb.srcObject = null;
+    }
+    this._wooferLiveAudio = null;
+    this._wooferLiveUsb = null;
+
+    if (this.wooferLiveStream) {
+      this.wooferLiveStream.getTracks().forEach(t => t.stop());
+      this.wooferLiveStream = null;
+    }
+    if (this.wooferLiveCtx) {
+      await this.wooferLiveCtx.close().catch(() => {});
+      this.wooferLiveCtx = null;
+    }
+    this.wooferLiveNodes = null;
+
+    if (this.els.wooferLivePreview) {
+      this.els.wooferLivePreview.pause();
+      this.els.wooferLivePreview.srcObject = null;
+      this.els.wooferLivePreview.classList.remove('active');
+    }
+    if (this.els.wooferLiveState) this.els.wooferLiveState.textContent = 'Idle';
+  }
+
+  async _loadWooferFile(file) {
+    if (!file.type.startsWith('audio/') && !/\.(wav|mp3|m4a|aac|ogg|flac)$/i.test(file.name)) {
+      alert('Choose an audio file.');
+      return;
+    }
+
+    this._wooferStop();
+    this.els.wooferFileName.textContent = file.name;
+    this.els.wooferDropZone.style.display = 'none';
+    this.els.wooferPlayer.style.display = 'block';
+    if (this.els.statusPlayback) this.els.statusPlayback.textContent = 'Decoding...';
+
+    try {
+      const arrayBuf = await file.arrayBuffer();
+      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      this.wooferSourceBuffer = await ctx.decodeAudioData(arrayBuf);
+      await ctx.close();
+      this._wooferDuration = this.wooferSourceBuffer.duration;
+      await this._buildWooferSplit(false);
+    } catch (err) {
+      console.error('[Woofer] Decode error:', err);
+      alert('Audio decode failed.');
+      this._clearWoofer();
+    }
+  }
+
+  async _buildWooferSplit(autoPlay) {
+    if (!this.wooferSourceBuffer) return;
+    this._wooferStop();
+    this._wooferReady = false;
+    if (this.els.statusPlayback) this.els.statusPlayback.textContent = 'Splitting...';
+
+    try {
+      const cutoff = this.wooferCutoffHz;
+      const gain = this.wooferGain / 100;
+      this.wooferAudioBandBuffer = await this._renderWooferBand('highpass', cutoff, 1.0);
+      this.wooferUsbBandBuffer = await this._renderWooferBand('lowpass', cutoff, gain);
+
+      const sr = this.wooferSourceBuffer.sampleRate;
+      const audioChannels = [];
+      const audioChannelCount = Math.min(2, this.wooferAudioBandBuffer.numberOfChannels);
+      for (let ch = 0; ch < audioChannelCount; ch++) {
+        audioChannels.push(this.wooferAudioBandBuffer.getChannelData(ch));
+      }
+
+      this._revokeWooferUrls();
+      this.wooferAudioUrl = URL.createObjectURL(this._createWavBlob(audioChannels, sr));
+      this.wooferUsbUrl = URL.createObjectURL(this._createMonoWavBlob(this.wooferUsbBandBuffer.getChannelData(0), sr));
+
+      this._wooferAudio = new Audio();
+      this._wooferUsb = new Audio();
+      this._wooferAudio.muted = false;
+      this._wooferUsb.muted = false;
+      this._wooferAudio.volume = 1;
+      this._wooferUsb.volume = 1;
+      await this._applyWooferPorts();
+
+      await Promise.all([
+        this._waitAudioReady(this._wooferAudio, this.wooferAudioUrl),
+        this._waitAudioReady(this._wooferUsb, this.wooferUsbUrl),
+      ]);
+
+      this._wooferAudio.currentTime = 0;
+      this._wooferUsb.currentTime = 0;
+      if (this.els.wooferSeekSlider) this.els.wooferSeekSlider.value = 0;
+      if (this.els.wooferTransportTime) {
+        this.els.wooferTransportTime.textContent = `0:00 / ${this._fmtTime(this._wooferDuration)}`;
+      }
+
+      this._wooferReady = true;
+      if (this.els.statusPlayback) {
+        this.els.statusPlayback.textContent = this.wooferGain > 0 ? 'Woofer ready' : 'USB bass muted';
+      }
+      if (autoPlay) this._wooferPlay();
+    } catch (err) {
+      console.error('[Woofer] Split error:', err);
+      this._wooferReady = false;
+      if (this.els.statusPlayback) this.els.statusPlayback.textContent = 'Split failed';
+    }
+  }
+
+  async _renderWooferBand(type, cutoff, gainValue) {
+    const source = this.wooferSourceBuffer;
+    const sr = source.sampleRate;
+    const frameCount = source.length;
+    const isLow = type === 'lowpass';
+    const outChannels = isLow ? 1 : Math.min(2, source.numberOfChannels);
+    const offCtx = new OfflineAudioContext(outChannels, frameCount, sr);
+    const src = offCtx.createBufferSource();
+
+    if (isLow) {
+      const mono = offCtx.createBuffer(1, frameCount, sr);
+      const monoData = mono.getChannelData(0);
+      for (let ch = 0; ch < source.numberOfChannels; ch++) {
+        const data = source.getChannelData(ch);
+        for (let i = 0; i < frameCount; i++) monoData[i] += data[i] / source.numberOfChannels;
+      }
+      src.buffer = mono;
+    } else {
+      src.buffer = source;
+    }
+
+    const filter = offCtx.createBiquadFilter();
+    filter.type = type;
+    filter.frequency.value = cutoff;
+    filter.Q.value = 0.707;
+
+    const gain = offCtx.createGain();
+    gain.gain.value = gainValue;
+
+    src.connect(filter).connect(gain).connect(offCtx.destination);
+    src.start(0);
+    return offCtx.startRendering();
+  }
+
+  _waitAudioReady(audio, url) {
+    return new Promise((resolve, reject) => {
+      audio.addEventListener('canplay', resolve, { once: true });
+      audio.addEventListener('error', reject, { once: true });
+      audio.src = url;
+      audio.load();
+    });
+  }
+
+  _wooferPlay() {
+    if (!this._wooferReady || !this._wooferAudio.src) return;
+    if (this._wooferAudio.duration && this._wooferAudio.currentTime >= this._wooferAudio.duration - 0.1) {
+      this._wooferAudio.currentTime = 0;
+      this._wooferUsb.currentTime = 0;
+    }
+    this._wooferAudio.play().catch(() => {});
+    this._wooferUsb.play().catch((err) => console.warn('[Woofer] USB playback failed:', err));
+    if (this.els.statusPlayback) {
+      this.els.statusPlayback.textContent = this.wooferGain > 0 ? 'Woofer playing' : 'USB bass muted';
+    }
+    this._startWooferSeekUpdate();
+    this._startWooferMeter();
+  }
+
+  _wooferPause() {
+    if (!this._wooferReady) return;
+    this._wooferAudio.pause();
+    this._wooferUsb.pause();
+    if (this.els.statusPlayback) this.els.statusPlayback.textContent = 'Woofer paused';
+    this._stopWooferSeekUpdate();
+    this._stopWooferMeter();
+  }
+
+  _wooferStop() {
+    if (!this._wooferAudio || !this._wooferUsb) return;
+    this._wooferAudio.pause();
+    this._wooferUsb.pause();
+    this._wooferAudio.currentTime = 0;
+    this._wooferUsb.currentTime = 0;
+    if (this.els.wooferSeekSlider) this.els.wooferSeekSlider.value = 0;
+    if (this.els.wooferTransportTime) this.els.wooferTransportTime.textContent = `0:00 / ${this._fmtTime(this._wooferDuration || 0)}`;
+    if (this.els.statusPlayback && this._wooferReady) this.els.statusPlayback.textContent = 'Woofer stopped';
+    this._stopWooferSeekUpdate();
+    this._stopWooferMeter();
+    this._setWooferMeter(0, 0);
+  }
+
+  _startWooferSeekUpdate() {
+    this._stopWooferSeekUpdate();
+    const update = () => {
+      const t = this._wooferAudio.currentTime || 0;
+      const d = this._wooferDuration || 1;
+      if (this.els.wooferSeekSlider) this.els.wooferSeekSlider.value = (t / d * 100).toFixed(1);
+      if (this.els.wooferTransportTime) this.els.wooferTransportTime.textContent = `${this._fmtTime(t)} / ${this._fmtTime(d)}`;
+      if (Math.abs(this._wooferUsb.currentTime - t) > 0.1) this._wooferUsb.currentTime = t;
+      if (!this._wooferAudio.paused) this._wooferSeekFrame = requestAnimationFrame(update);
+    };
+    this._wooferSeekFrame = requestAnimationFrame(update);
+  }
+
+  _stopWooferSeekUpdate() {
+    if (this._wooferSeekFrame) cancelAnimationFrame(this._wooferSeekFrame);
+    this._wooferSeekFrame = null;
+  }
+
+  _startWooferMeter() {
+    this._stopWooferMeter();
+    const update = () => {
+      const t = this._wooferAudio.currentTime || 0;
+      this._setWooferMeter(
+        this._bufferRmsAt(this.wooferAudioBandBuffer, t),
+        this._bufferRmsAt(this.wooferUsbBandBuffer, t)
+      );
+      if (!this._wooferAudio.paused) this.wooferMeterFrame = requestAnimationFrame(update);
+    };
+    this.wooferMeterFrame = requestAnimationFrame(update);
+  }
+
+  _stopWooferMeter() {
+    if (this.wooferMeterFrame) cancelAnimationFrame(this.wooferMeterFrame);
+    this.wooferMeterFrame = null;
+  }
+
+  _bufferRmsAt(buffer, timeSec) {
+    if (!buffer) return 0;
+    const start = Math.max(0, Math.floor(timeSec * buffer.sampleRate));
+    const count = Math.min(2048, buffer.length - start);
+    if (count <= 0) return 0;
+    let sum = 0;
+    for (let ch = 0; ch < buffer.numberOfChannels; ch++) {
+      const data = buffer.getChannelData(ch);
+      for (let i = 0; i < count; i++) sum += data[start + i] * data[start + i];
+    }
+    return Math.sqrt(sum / (count * buffer.numberOfChannels));
+  }
+
+  _setWooferMeter(audioRms, usbRms) {
+    if (this.els.wooferAudioMeter) this.els.wooferAudioMeter.style.width = `${Math.min(100, audioRms * 450)}%`;
+    if (this.els.wooferUsbMeter) this.els.wooferUsbMeter.style.width = `${Math.min(100, usbRms * 650)}%`;
+  }
+
+  _revokeWooferUrls() {
+    if (this.wooferAudioUrl) URL.revokeObjectURL(this.wooferAudioUrl);
+    if (this.wooferUsbUrl) URL.revokeObjectURL(this.wooferUsbUrl);
+    this.wooferAudioUrl = null;
+    this.wooferUsbUrl = null;
+  }
+
+  _clearWoofer() {
+    this._wooferStop();
+    this._stopWooferCapture();
+    this._revokeWooferUrls();
+    this.wooferSourceBuffer = null;
+    this.wooferAudioBandBuffer = null;
+    this.wooferUsbBandBuffer = null;
+    this._wooferReady = false;
+    this._wooferDuration = 0;
+    this._wooferAudio = new Audio();
+    this._wooferUsb = new Audio();
+    if (this.els.wooferFileName) this.els.wooferFileName.textContent = '--';
+    if (this.els.wooferDropZone) this.els.wooferDropZone.style.display = '';
+    if (this.els.wooferPlayer) this.els.wooferPlayer.style.display = 'none';
+    if (this.els.wooferFileInput) this.els.wooferFileInput.value = '';
     if (this.els.statusPlayback) this.els.statusPlayback.textContent = '--';
   }
 }
